@@ -1,0 +1,5 @@
+{
+  "home": "https://github.com/conda-forge/ca-certificates-feedstock",
+  "license": "ISC",
+  "summary": "Certificates for use with other packages."
+}

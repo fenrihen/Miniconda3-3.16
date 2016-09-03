@@ -1,0 +1,53 @@
+{
+  "about": {
+    "home": "https://sourceware.org/libffi/",
+    "license": "Custom",
+    "summary": "A Portable Foreign Function Interface Library."
+  },
+  "app": {},
+  "build": {
+    "entry_points": [],
+    "features": [],
+    "number": "2",
+    "script_env": [],
+    "string": "",
+    "track_features": []
+  },
+  "extra": {
+    "recipe-maintainers": [
+      "stefan-balke",
+      "scopatz"
+    ]
+  },
+  "package": {
+    "name": "libffi",
+    "version": "3.2.1"
+  },
+  "requirements": {
+    "build": [
+      "autoconf",
+      "automake",
+      "libtool"
+    ],
+    "conflicts": [],
+    "run": []
+  },
+  "source": {
+    "fn": "libffi-3.2.1.tar.gz",
+    "git_rev": "",
+    "md5": "",
+    "patches": [],
+    "path": "",
+    "sha1": "280c265b789e041c02e5c97815793dfc283fb1e6",
+    "svn_rev": "",
+    "url": "ftp://sourceware.org/pub/libffi/libffi-3.2.1.tar.gz"
+  },
+  "test": {
+    "commands": [
+      "test -e $PREFIX/lib/libffi.so"
+    ],
+    "files": [],
+    "imports": [],
+    "requires": []
+  }
+}

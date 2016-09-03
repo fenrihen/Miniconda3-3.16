@@ -1,0 +1,37 @@
+# This file created by conda-build 1.21.11+0.g5b44ab3.dirty
+# meta.yaml template originally from:
+# /recipe_root, last modified Wed Aug 17 12:03:35 2016
+# ------------------------------------------------
+
+package:
+    name: libpng
+    version: 1.6.24
+source:
+    fn: libpng-1.6.24.tar.gz
+    sha256: be46e0d14ccac3800f816ae860d191a1187a40164b7552c44afeee97a9caa0a3
+    url: ftp://ftp.simplesystems.org/pub/libpng/png/src/libpng16/libpng-1.6.24.tar.gz
+build:
+    features: ''
+    number: '0'
+requirements:
+    build:
+        - libtool
+        - automake
+        - zlib 1.2.*
+    run:
+        - zlib 1.2.*
+test:
+    commands:
+        - test -f ${PREFIX}/lib/libpng.a
+        - test -f ${PREFIX}/lib/libpng.so
+        - libpng-config --version
+        - conda inspect linkages -n _test libpng
+    requires: ''
+about:
+    home: http://www.libpng.org/pub/png/libpng.html
+    license: Zlib
+    license_file: libpng-LICENSE.txt
+    summary: PNG reference library
+extra:
+    recipe-maintainers:
+        - ocefpaf

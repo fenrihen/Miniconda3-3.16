@@ -1,0 +1,26 @@
+# This file created by conda-build 1.20.3
+# meta.yaml template originally from:
+# /recipe_root, last modified Fri May 20 05:34:14 2016
+# ------------------------------------------------
+
+package:
+    name: blas
+    version: '1.1'
+build:
+    number: '0'
+    string: openblas
+    track_features:
+        - blas_openblas
+requirements:
+    run:
+        - openblas
+test: {}
+about:
+    home: https://github.com/conda-forge/blas-feedstock
+    license: BSD 3-clause
+    summary: Metapackage to select the BLAS variant. Use conda's pinning mechanism
+        in your environment to control which variant you want.
+extra:
+    recipe-maintainers:
+        - jakirkham
+        - pelson

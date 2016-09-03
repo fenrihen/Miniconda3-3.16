@@ -1,0 +1,18 @@
+{
+  "arch": "x86_64",
+  "build": "py34_1",
+  "build_number": 1,
+  "depends": [
+    "conda-env >=2.5",
+    "pycosat",
+    "python 3.4*",
+    "pyyaml",
+    "requests",
+    "ruamel_yaml"
+  ],
+  "license": "BSD 3-Clause",
+  "name": "conda",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "version": "4.1.11"
+}

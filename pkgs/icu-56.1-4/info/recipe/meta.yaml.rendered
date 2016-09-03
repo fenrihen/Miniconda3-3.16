@@ -1,0 +1,52 @@
+# This file created by conda-build 1.21.3
+# meta.yaml template originally from:
+# /recipe_root, last modified Wed Jun 29 14:22:14 2016
+# ------------------------------------------------
+
+package:
+    name: icu
+    version: '56.1'
+source:
+    fn: icu4c-56_1-src.tgz
+    md5: c4a2d71ff56aec5ebfab2a3f059be99d
+    patches: ''
+    url: http://download.icu-project.org/files/icu4c/56.1/icu4c-56_1-src.tgz
+build:
+    features: ''
+    number: '4'
+requirements:
+    build:
+        - toolchain
+test:
+    commands:
+        - test -f $PREFIX/lib/libicudata.a
+        - test -f $PREFIX/lib/libicudata.so.56.1
+        - test -f $PREFIX/lib/libicui18n.a
+        - test -f $PREFIX/lib/libicui18n.so.56.1
+        - test -f $PREFIX/lib/libicuio.a
+        - test -f $PREFIX/lib/libicuio.so.56.1
+        - test -f $PREFIX/lib/libicutest.a
+        - test -f $PREFIX/lib/libicutest.so.56.1
+        - test -f $PREFIX/lib/libicutu.a
+        - test -f $PREFIX/lib/libicutu.so.56.1
+        - test -f $PREFIX/lib/libicuuc.a
+        - test -f $PREFIX/lib/libicuuc.so.56.1
+        - genbrk --help
+        - gencfu --help
+        - gencnval --help
+        - gendict --help
+        - icuinfo --help
+        - icu-config --help
+        - makeconv gb-18030-2000.ucm
+    files:
+        - gb-18030-2000.ucm
+        - de.txt
+about:
+    home: http://site.icu-project.org/
+    license: MIT
+    summary: International Components for Unicode
+extra:
+    recipe-maintainers:
+        - ccordoba12
+        - jakirkham
+        - msarahan

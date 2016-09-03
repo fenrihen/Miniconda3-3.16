@@ -1,0 +1,48 @@
+{
+  "arch": "x86_64",
+  "binstar": {
+    "channel": "main",
+    "owner_id": "5528f42ce1dad12974506e8d",
+    "package_id": "571e78ed5816390eb1089695"
+  },
+  "build": "py34_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "depends": [
+    "python 3.4*"
+  ],
+  "files": [
+    "lib/python3.4/site-packages/backports.shutil_get_terminal_size-1.0.0.dist-info/DESCRIPTION.rst",
+    "lib/python3.4/site-packages/backports.shutil_get_terminal_size-1.0.0.dist-info/INSTALLER",
+    "lib/python3.4/site-packages/backports.shutil_get_terminal_size-1.0.0.dist-info/METADATA",
+    "lib/python3.4/site-packages/backports.shutil_get_terminal_size-1.0.0.dist-info/RECORD",
+    "lib/python3.4/site-packages/backports.shutil_get_terminal_size-1.0.0.dist-info/WHEEL",
+    "lib/python3.4/site-packages/backports.shutil_get_terminal_size-1.0.0.dist-info/metadata.json",
+    "lib/python3.4/site-packages/backports.shutil_get_terminal_size-1.0.0.dist-info/top_level.txt",
+    "lib/python3.4/site-packages/backports/__init__.py",
+    "lib/python3.4/site-packages/backports/__pycache__/__init__.cpython-34.pyc",
+    "lib/python3.4/site-packages/backports/shutil_get_terminal_size/__init__.py",
+    "lib/python3.4/site-packages/backports/shutil_get_terminal_size/__pycache__/__init__.cpython-34.pyc",
+    "lib/python3.4/site-packages/backports/shutil_get_terminal_size/__pycache__/get_terminal_size.cpython-34.pyc",
+    "lib/python3.4/site-packages/backports/shutil_get_terminal_size/get_terminal_size.py"
+  ],
+  "fn": "backports.shutil_get_terminal_size-1.0.0-py34_0.tar.bz2",
+  "license": "MIT",
+  "link": {
+    "source": "/home/fenrihen/Uygulamalar/Miniconda3-3.16/pkgs/backports.shutil_get_terminal_size-1.0.0-py34_0",
+    "type": "hard-link"
+  },
+  "machine": "x86_64",
+  "md5": "49cbf4d63d66ccd0a80ed7954b758830",
+  "name": "backports.shutil_get_terminal_size",
+  "operatingsystem": "linux",
+  "platform": "linux",
+  "priority": 1,
+  "requires": [],
+  "schannel": "conda-forge",
+  "size": 5496,
+  "subdir": "linux-64",
+  "target-triplet": "x86_64-any-linux",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/backports.shutil_get_terminal_size-1.0.0-py34_0.tar.bz2",
+  "version": "1.0.0"
+}

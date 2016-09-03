@@ -1,0 +1,44 @@
+# This file created by conda-build 1.21.3
+# meta.yaml template originally from:
+# /recipe_root, last modified Tue Jul  5 18:16:29 2016
+# ------------------------------------------------
+
+package:
+    name: jupyter_console
+    version: 5.0.0
+source:
+    fn: jupyter_console-5.0.0.tar.gz
+    sha256: e966b2b5bf9a1e8c5bd11a6335bb11f68ec585ea39b801721b2ed9dd964468fa
+    url: https://github.com/jupyter/jupyter_console/archive/5.0.0.tar.gz
+build:
+    entry_points:
+        - jupyter-console = jupyter_console.app:main
+    number: '0'
+    script: python setup.py install
+requirements:
+    build:
+        - python
+    run:
+        - python
+        - jupyter_client
+        - ipython
+        - ipykernel
+        - prompt_toolkit
+        - pygments
+        - pexpect
+test:
+    commands:
+        - jupyter-console -h
+    imports:
+        - jupyter_console
+about:
+    home: http://jupyter.org
+    license: BSD 3-Clause
+    summary: Jupyter terminal console
+extra:
+    recipe-maintainers:
+        - jakirkham
+        - minrk
+        - pelson
+        - takluyver
+        - ocefpaf

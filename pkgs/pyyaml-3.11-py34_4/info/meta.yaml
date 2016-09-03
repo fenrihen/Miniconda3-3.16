@@ -1,0 +1,39 @@
+# This file created by conda-build 1.20.3+48.g09ddcfe
+# meta.yaml template originally from:
+# /home/ilan/anaconda/packages/pyyaml, last modified Thu Jun  2 14:52:21 2016
+# ------------------------------------------------
+
+package:
+    name: pyyaml
+    version: '3.11'
+source:
+    fn: PyYAML-3.11.tar.gz
+    md5: f50e08ef0fe55178479d3a618efe21db
+    url: https://pypi.python.org/packages/source/P/PyYAML/PyYAML-3.11.tar.gz
+build:
+    number: '4'
+requirements:
+    build:
+        - python
+        - yaml 0.1.6
+    run:
+        - python
+        - yaml 0.1.6
+test:
+    imports:
+        - yaml
+        - _yaml
+about:
+    description: 'PyYAML is a YAML parser and emitter for Python. YAML is a data
+
+        serialization format designed for human readability and interaction with
+
+        scripting languages.
+
+        '
+    dev_url: http://pyyaml.org/browser
+    doc_url: http://pyyaml.org/
+    home: http://pyyaml.org/wiki/PyYAML
+    license: MIT
+    license_file: LICENSE
+    summary: YAML parser and emitter for Python

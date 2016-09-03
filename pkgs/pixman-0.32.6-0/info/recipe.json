@@ -1,0 +1,48 @@
+{
+  "about": {
+    "home": "http://cgit.freedesktop.org/pixman/",
+    "license": "MIT",
+    "summary": "A low-level software library for pixel manipulation"
+  },
+  "app": {},
+  "build": {
+    "entry_points": [],
+    "features": [],
+    "number": "0",
+    "script_env": [],
+    "string": "",
+    "track_features": []
+  },
+  "extra": {
+    "recipe-maintainers": [
+      "ccordoba12",
+      "jakirkham"
+    ]
+  },
+  "package": {
+    "name": "pixman",
+    "version": "0.32.6"
+  },
+  "requirements": {
+    "build": [],
+    "conflicts": [],
+    "run": []
+  },
+  "source": {
+    "fn": "pixman-0.32.6.tar.gz",
+    "git_rev": "",
+    "md5": "3a30859719a41bd0f5cccffbfefdd4c2",
+    "patches": [],
+    "path": "",
+    "svn_rev": "",
+    "url": "http://cairographics.org/releases/pixman-0.32.6.tar.gz"
+  },
+  "test": {
+    "commands": [
+      "exit $(test -f ${PREFIX}/lib/libpixman-1.a)"
+    ],
+    "files": [],
+    "imports": [],
+    "requires": []
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "arch": "x86_64",
+  "build": "py34_1",
+  "build_number": 1,
+  "depends": [
+    "python 3.4*",
+    "traitlets"
+  ],
+  "license": "BSD 3-clause",
+  "name": "jupyter_core",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "version": "4.1.1"
+}

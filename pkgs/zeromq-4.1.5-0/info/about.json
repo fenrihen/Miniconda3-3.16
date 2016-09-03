@@ -1,0 +1,5 @@
+{
+  "home": "http://zeromq.org",
+  "license": "LGPL 3",
+  "summary": "A high-performance asynchronous messaging library."
+}

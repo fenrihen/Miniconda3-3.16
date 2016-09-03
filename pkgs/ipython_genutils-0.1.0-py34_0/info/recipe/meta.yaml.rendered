@@ -1,0 +1,34 @@
+# This file created by conda-build 1.21.4
+# meta.yaml template originally from:
+# /recipe_root, last modified Thu Jul  7 15:15:13 2016
+# ------------------------------------------------
+
+package:
+    name: ipython_genutils
+    version: 0.1.0
+source:
+    fn: ipython_genutils-0.1.0.tar.gz
+    md5: 2016819d42d8b186aad1eaed2d11b4d2
+    url: https://github.com/ipython/ipython_genutils/archive/0.1.0.tar.gz
+build:
+    number: '0'
+    script: python setup.py install
+requirements:
+    build:
+        - python
+    run:
+        - python
+test:
+    imports:
+        - ipython_genutils
+        - ipython_genutils.testing
+        - ipython_genutils.tests
+about:
+    home: http://ipython.org
+    license: BSD 3-Clause
+    summary: Vestigial utilities from IPython
+extra:
+    recipe-maintainers:
+        - minrk
+        - msarahan
+        - pelson

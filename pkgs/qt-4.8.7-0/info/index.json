@@ -1,0 +1,21 @@
+{
+  "arch": "x86_64",
+  "build": "0",
+  "build_number": 0,
+  "depends": [
+    "fontconfig 2.11.*",
+    "freetype 2.6.*",
+    "jpeg 9*",
+    "libpng >=1.6.21,<1.7",
+    "libtiff 4.0.*",
+    "libxml2 >=2.9.3",
+    "openssl 1.0.*",
+    "pango",
+    "zlib 1.2.*"
+  ],
+  "license": "LGPL",
+  "name": "qt",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "version": "4.8.7"
+}

@@ -1,0 +1,55 @@
+{
+  "about": {
+    "home": "http://docs.python.org/3/library/configparser.html",
+    "license": "MIT",
+    "summary": "This library brings the updated configparser from Python 3.5 to Python 2.6-3.5"
+  },
+  "app": {},
+  "build": {
+    "entry_points": [],
+    "features": [],
+    "number": "0",
+    "script": "python setup.py install --single-version-externally-managed --record record.txt",
+    "script_env": [],
+    "string": "",
+    "track_features": []
+  },
+  "extra": {
+    "recipe-maintainers": [
+      "ocefpaf"
+    ]
+  },
+  "package": {
+    "name": "configparser",
+    "version": "3.5.0b2"
+  },
+  "requirements": {
+    "build": [
+      "python",
+      "setuptools"
+    ],
+    "conflicts": [],
+    "run": [
+      "python"
+    ]
+  },
+  "source": {
+    "fn": "configparser-3.5.0b2.tar.gz",
+    "git_rev": "",
+    "md5": "ad2a71db8bd9a017ed4735eac7acfa07",
+    "patches": [],
+    "path": "",
+    "svn_rev": "",
+    "url": "https://pypi.python.org/packages/source/c/configparser/configparser-3.5.0b2.tar.gz"
+  },
+  "test": {
+    "commands": [],
+    "files": [],
+    "imports": [
+      "backports",
+      "backports.configparser",
+      "configparser"
+    ],
+    "requires": []
+  }
+}

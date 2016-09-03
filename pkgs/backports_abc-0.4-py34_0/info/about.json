@@ -1,0 +1,5 @@
+{
+  "home": "https://github.com/cython/backports_abc",
+  "license": "PSF 2",
+  "summary": "A backport of recent additions to the `collections.abc` module."
+}

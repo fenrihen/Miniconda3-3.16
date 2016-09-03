@@ -1,0 +1,5 @@
+{
+  "home": "https://github.com/jupyter-contrib/jupyter_nbextensions_configurator",
+  "license": "BSD 3-clause",
+  "summary": "A server extension for jupyter notebook providing configuration interfaces for notebook extensions (nbextensions)."
+}

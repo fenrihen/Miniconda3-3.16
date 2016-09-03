@@ -1,0 +1,5 @@
+{
+  "home": "http://www.openblas.net/",
+  "license": "BSD 3-Clause",
+  "summary": "An optimized BLAS library based on GotoBLAS2 1.13 BSD version."
+}

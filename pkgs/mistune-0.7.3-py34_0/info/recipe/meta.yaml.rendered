@@ -1,0 +1,38 @@
+# This file created by conda-build 1.21.3
+# meta.yaml template originally from:
+# /recipe_root, last modified Thu Jun 30 13:21:06 2016
+# ------------------------------------------------
+
+package:
+    name: mistune
+    version: 0.7.3
+source:
+    fn: mistune-0.7.3.tar.gz
+    sha256: c4f391e61d3b5e8fbb112669a5c6960fb04b71b61d35f0f09a201809545b1676
+    url: https://github.com/lepture/mistune/archive/v0.7.3.tar.gz
+build:
+    number: '0'
+    script: python setup.py install --single-version-externally-managed --record=record.txt
+requirements:
+    build:
+        - python
+        - setuptools
+    run:
+        - python
+test:
+    commands:
+        - cd "/feedstock_root/build_artefacts/work/mistune-0.7.3"
+        - python setup.py -q nosetests
+    imports:
+        - mistune
+    requires:
+        - python
+        - nose
+about:
+    home: https://github.com/lepture/mistune
+    license: BSD 3-clause
+    summary: The fastest markdown parser in pure Python
+extra:
+    recipe-maintainers:
+        - pelson
+        - bollwyvl

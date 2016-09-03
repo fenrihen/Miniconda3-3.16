@@ -1,0 +1,34 @@
+# This file created by conda-build 1.21.4
+# meta.yaml template originally from:
+# /recipe_root, last modified Thu Jul  7 11:58:47 2016
+# ------------------------------------------------
+
+package:
+    name: simplegeneric
+    version: 0.8.1
+source:
+    fn: simplegeneric-0.8.1.zip
+    md5: f9c1fab00fd981be588fc32759f474e3
+    url: https://pypi.python.org/packages/source/s/simplegeneric/simplegeneric-0.8.1.zip
+build:
+    number: '0'
+    script: python setup.py install --single-version-externally-managed --record=record.txt
+requirements:
+    build:
+        - python
+        - setuptools
+    run:
+        - python
+test:
+    imports:
+        - simplegeneric
+about:
+    home: http://cheeseshop.python.org/pypi/simplegeneric
+    license: Zope Public License
+    summary: Simple generic functions (similar to Python's own len(), pickle.dump(),
+        etc.)
+extra:
+    recipe-maintainers:
+        - minrk
+        - msarahan
+        - pelson

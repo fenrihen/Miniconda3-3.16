@@ -1,0 +1,14 @@
+{
+  "arch": "x86_64",
+  "build": "2",
+  "build_number": 2,
+  "depends": [
+    "ca-certificates"
+  ],
+  "license": "Apache-style (http://www.openssl.org/source/license.html)",
+  "license_family": "Apache",
+  "name": "openssl",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "version": "1.0.2h"
+}

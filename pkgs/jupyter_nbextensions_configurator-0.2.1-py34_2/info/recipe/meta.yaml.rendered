@@ -1,0 +1,46 @@
+# This file created by conda-build 1.21.8
+# meta.yaml template originally from:
+# /recipe_root, last modified Mon Aug  1 14:51:32 2016
+# ------------------------------------------------
+
+package:
+    name: jupyter_nbextensions_configurator
+    version: 0.2.1
+source:
+    fn: jupyter_nbextensions_configurator-0.2.1.tar.gz
+    md5: 86efebd441f4404a6194d11c14383430
+    url: https://pypi.io/packages/source/j/jupyter_nbextensions_configurator/jupyter_nbextensions_configurator-0.2.1.tar.gz
+build:
+    number: '2'
+    script: python setup.py install --single-version-externally-managed --record=record.txt
+requirements:
+    build:
+        - python
+        - setuptools
+    run:
+        - python
+        - jupyter_contrib_core >=0.2
+        - jupyter_core
+        - nbconvert
+        - notebook >=4.0
+        - pyyaml
+        - setuptools
+        - tornado
+        - traitlets
+test:
+    commands:
+        - jupyter nbextensions_configurator --help
+        - jupyter nbextensions_configurator enable --help
+        - jupyter nbextensions_configurator disable --help
+    imports:
+        - jupyter_nbextensions_configurator
+        - jupyter_nbextensions_configurator.application
+about:
+    home: https://github.com/jupyter-contrib/jupyter_nbextensions_configurator
+    license: BSD 3-clause
+    license_file: LICENSE.txt
+    summary: A server extension for jupyter notebook providing configuration interfaces
+        for notebook extensions (nbextensions).
+extra:
+    recipe-maintainers:
+        - jcb91

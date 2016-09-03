@@ -1,0 +1,47 @@
+# This file created by conda-build 1.21.7
+# meta.yaml template originally from:
+# /recipe_root, last modified Tue Jul 26 15:15:24 2016
+# ------------------------------------------------
+
+package:
+    name: numpy
+    version: 1.11.1
+source:
+    fn: numpy-1.11.1.tar.gz
+    md5: 2f44a895a8104ffac140c3a70edbd450
+    url: https://pypi.io/packages/source/n/numpy/numpy-1.11.1.tar.gz
+build:
+    features:
+        - blas_openblas
+    number: '201'
+requirements:
+    build:
+        - cython
+        - python
+        - setuptools
+        - blas 1.1 openblas
+        - openblas 0.2.18*
+    run:
+        - python
+        - blas 1.1 openblas
+        - openblas 0.2.18*
+test:
+    commands:
+        - f2py -h
+    imports:
+        - numpy
+        - numpy.linalg.lapack_lite
+    requires:
+        - nose
+about:
+    home: http://numpy.scipy.org/
+    license: BSD 3-Clause
+    license_file: LICENSE.txt
+    summary: array processing for numbers, strings, records, and objects.
+extra:
+    recipe-maintainers:
+        - jakirkham
+        - msarahan
+        - pelson
+        - rgommers
+        - ocefpaf

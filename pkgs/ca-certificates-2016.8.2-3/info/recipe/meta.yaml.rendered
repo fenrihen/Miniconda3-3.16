@@ -1,0 +1,33 @@
+# This file created by conda-build 1.21.9
+# meta.yaml template originally from:
+# /recipe_root, last modified Thu Aug  4 22:22:56 2016
+# ------------------------------------------------
+
+package:
+    name: ca-certificates
+    version: 2016.8.2
+build:
+    always_include_files:
+        - ssl/cert.pem
+        - ssl/cacert.pem
+    number: '3'
+requirements:
+    build:
+        - python
+        - certifi 2016.8.2
+test:
+    commands:
+        - test -f "${PREFIX}/ssl/cacert.pem"
+        - test -f "${PREFIX}/ssl/cert.pem"
+        - curl --cacert "${PREFIX}/ssl/cacert.pem" https://www.google.com
+    requires:
+        - curl
+about:
+    home: https://github.com/conda-forge/ca-certificates-feedstock
+    license: ISC
+    summary: Certificates for use with other packages.
+extra:
+    recipe-maintainers:
+        - jakirkham
+        - msarahan
+        - pelson

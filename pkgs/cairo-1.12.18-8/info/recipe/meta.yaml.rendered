@@ -1,0 +1,48 @@
+# This file created by conda-build 1.21.6
+# meta.yaml template originally from:
+# /recipe_root, last modified Thu Jul 21 13:38:51 2016
+# ------------------------------------------------
+
+package:
+    name: cairo
+    version: 1.12.18
+source:
+    fn: cairo-1.12.18.tar.xz
+    md5: 8e4ff32b82c3b39387eb6f5c59ef848e
+    url: http://cairographics.org/releases/cairo-1.12.18.tar.xz
+build:
+    features: ''
+    number: '8'
+requirements:
+    build:
+        - pkg-config
+        - libtool
+        - xz 5.2.*
+        - freetype 2.6.*
+        - fontconfig 2.11.*
+        - pixman
+        - libpng >=1.6.21,<1.7
+        - zlib 1.2.*
+        - icu 56.*
+    run:
+        - freetype 2.6.*
+        - fontconfig 2.11.*
+        - libpng >=1.6.21,<1.7
+        - pixman
+        - zlib 1.2.*
+        - icu 56.*
+test:
+    commands:
+        - cairo-trace --help
+        - test -f $PREFIX/lib/libcairo.a
+        - test -f $PREFIX/lib/libcairo.so
+        - test -f $PREFIX/lib/libcairo-script-interpreter.a
+        - test -f $PREFIX/lib/libcairo-script-interpreter.so
+about:
+    home: http://cairographics.org/
+    license: LGPL 2.1 or MPL 1.1
+    summary: Cairo is a 2D graphics library with support for multiple output devices.
+extra:
+    recipe-maintainers:
+        - ccordoba12
+        - jakirkham

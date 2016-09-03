@@ -1,0 +1,5 @@
+{
+  "home": "https://github.com/conda/conda",
+  "license": "BSD 3-Clause",
+  "summary": "OS-agnostic, system-level binary package manager."
+}

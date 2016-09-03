@@ -1,0 +1,39 @@
+# This file created by conda-build 1.21.3
+# meta.yaml template originally from:
+# /recipe_root, last modified Fri Jul  1 11:33:44 2016
+# ------------------------------------------------
+
+package:
+    name: jupyter_client
+    version: 4.3.0
+source:
+    fn: jupyter_client-4.3.0.tar.gz
+    md5: 257d9f5429dac4d9511db84d201d3a9e
+    url: https://github.com/jupyter/jupyter_client/archive/4.3.0.tar.gz
+build:
+    entry_points:
+        - jupyter-kernelspec = jupyter_client.kernelspecapp:KernelSpecApp.launch_instance
+    number: '0'
+    script: python setup.py install
+requirements:
+    build:
+        - python
+    run:
+        - python
+        - traitlets
+        - jupyter_core
+        - pyzmq >=13
+test:
+    commands:
+        - jupyter kernelspec -h
+    imports:
+        - jupyter_client
+about:
+    home: http://jupyter.org
+    license: BSD 3-clause
+    summary: jupyter_client contains the reference implementation of the Jupyter protocol.
+extra:
+    recipe-maintainers:
+        - jakirkham
+        - minrk
+        - pelson

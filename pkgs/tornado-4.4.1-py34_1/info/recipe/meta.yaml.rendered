@@ -1,0 +1,38 @@
+# This file created by conda-build 1.21.7
+# meta.yaml template originally from:
+# /recipe_root, last modified Wed Jul 27 16:04:07 2016
+# ------------------------------------------------
+
+package:
+    name: tornado
+    version: 4.4.1
+source:
+    fn: tornado-4.4.1.tar.gz
+    md5: fff8a7d7f580b04bacc2ffe7ddf41133
+    url: https://pypi.io/packages/source/t/tornado/tornado-4.4.1.tar.gz
+build:
+    number: '1'
+    script: python setup.py install --single-version-externally-managed --record=record.txt
+requirements:
+    build:
+        - python
+        - setuptools
+    run:
+        - python
+        - backports_abc >=0.4
+test:
+    imports:
+        - tornado
+        - tornado.platform
+        - tornado.test
+        - tornado.gen
+        - tornado.netutil
+about:
+    home: http://www.tornadoweb.org/
+    license: Apache Software License
+    summary: Tornado is a Python web framework and asynchronous networking library,
+        originally developed at FriendFeed.
+extra:
+    recipe-maintainers:
+        - jakirkham
+        - pelson

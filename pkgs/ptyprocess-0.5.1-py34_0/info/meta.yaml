@@ -1,0 +1,30 @@
+# This file created by conda-build 1.20.3
+# meta.yaml template originally from:
+# /recipe_root, last modified Mon May 23 14:22:54 2016
+# ------------------------------------------------
+
+package:
+    name: ptyprocess
+    version: 0.5.1
+source:
+    fn: ptyprocess-0.5.1.tar.gz
+    md5: 94e537122914cc9ec9c1eadcd36e73a1
+    url: https://pypi.python.org/packages/source/p/ptyprocess/ptyprocess-0.5.1.tar.gz
+build:
+    number: '0'
+requirements:
+    build:
+        - python
+    run:
+        - python
+test:
+    imports:
+        - ptyprocess
+about:
+    home: https://github.com/pexpect/ptyprocess
+    license: ISC
+    summary: Run a subprocess in a pseudo terminal
+extra:
+    recipe-maintainers:
+        - pelson
+        - takluyver

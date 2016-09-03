@@ -1,0 +1,5 @@
+{
+  "home": "https://github.com/jupyter-contrib/jupyter_contrib_core",
+  "license": "BSD 3-clause",
+  "summary": "Common utilities for jupyter-contrib projects."
+}

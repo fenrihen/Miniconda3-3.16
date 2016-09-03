@@ -1,0 +1,44 @@
+# This file created by conda-build 1.21.11+0.g5b44ab3.dirty
+# meta.yaml template originally from:
+# /recipe_root, last modified Wed Aug 10 12:19:00 2016
+# ------------------------------------------------
+
+package:
+    name: pyzmq
+    version: 15.4.0
+source:
+    fn: pyzmq-15.4.0.tar.gz
+    sha256: 9d1d69da7ee78dce8721a1617c7938ded1cd1df76a6c1abf19acebb1a5ccc2bf
+    url: https://pypi.io/packages/source/p/pyzmq/pyzmq-15.4.0.tar.gz
+build:
+    number: '0'
+requirements:
+    build:
+        - pkg-config
+        - python
+        - zeromq 4.1*
+        - libsodium
+    run:
+        - python
+        - zeromq 4.1*
+        - libsodium
+test:
+    commands:
+        - py.test --pyargs zmq.tests
+    imports:
+        - zmq
+        - zmq.backend.cython.socket
+        - zmq.backend.cython.utils
+        - zmq.devices.monitoredqueue
+    requires:
+        - pytest
+about:
+    home: https://github.com/zeromq/pyzmq
+    license: BSD 3-clause
+    summary: Python bindings for zeromq
+extra:
+    recipe-maintainers:
+        - jakirkham
+        - minrk
+        - msarahan
+        - pelson

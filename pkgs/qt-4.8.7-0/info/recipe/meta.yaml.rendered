@@ -1,0 +1,59 @@
+# This file created by conda-build 1.21.5
+# meta.yaml template originally from:
+# /recipe_root, last modified Sun Jul 17 18:34:03 2016
+# ------------------------------------------------
+
+package:
+    name: qt
+    version: 4.8.7
+source:
+    fn: qt-everywhere-opensource-src-4.8.7.tar.gz
+    md5: d990ee66bf7ab0c785589776f35ba6ad
+    patches:
+        - acceptance.patch
+        - ubuntu_disable_scrollbars.patch
+    url: http://download.qt-project.org/official_releases/qt/4.8/4.8.7/qt-everywhere-opensource-src-4.8.7.tar.gz
+build:
+    features: ''
+    number: '0'
+requirements:
+    build:
+        - freetype 2.6.*
+        - fontconfig 2.11.*
+        - freeglut
+        - openssl 1.0.*
+        - jpeg 9*
+        - libtiff 4.0.*
+        - zlib 1.2.*
+        - libpng >=1.6.21,<1.7
+        - libxml2 >=2.9.3
+    run:
+        - freetype 2.6.*
+        - fontconfig 2.11.*
+        - pango
+        - openssl 1.0.*
+        - libpng >=1.6.21,<1.7
+        - jpeg 9*
+        - libtiff 4.0.*
+        - zlib 1.2.*
+        - libxml2 >=2.9.3
+test:
+    files:
+        - test
+about:
+    description: 'Qt helps you create connected devices, UIs & applications that run
+
+        anywhere on any device, on any operating system at any time.
+
+        '
+    dev_url: https://github.com/qtproject
+    doc_url: http://doc.qt.io/
+    home: http://qt-project.org
+    license: LGPL
+    summary: Qt is a cross-platform application and UI framework
+extra:
+    recipe-maintainers:
+        - ccordoba12
+        - mingwandroid
+        - gillins
+        - msarahan

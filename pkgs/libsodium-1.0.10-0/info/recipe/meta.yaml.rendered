@@ -1,0 +1,26 @@
+# This file created by conda-build 1.21.1
+# meta.yaml template originally from:
+# /recipe_root, last modified Fri Jun 24 11:15:34 2016
+# ------------------------------------------------
+
+package:
+    name: libsodium
+    version: 1.0.10
+source:
+    fn: libsodium-1.0.10.tar.gz
+    sha1: f34f78330cf1a4f69acce5f3fc2ada2d4098c7f4
+    url: https://github.com/jedisct1/libsodium/releases/download/1.0.10/libsodium-1.0.10.tar.gz
+build:
+    number: '0'
+test:
+    commands:
+        - test -f ${PREFIX}/lib/libsodium.a
+        - test -f ${PREFIX}/lib/libsodium.so
+about:
+    home: https://github.com/jedisct1/libsodium
+    license: ISC
+    summary: A modern and easy-to-use crypto library.
+extra:
+    recipe-maintainers:
+        - jakirkham
+        - minrk

@@ -1,0 +1,5 @@
+{
+  "home": "https://developer.gnome.org/glib/",
+  "license": "GNU Lesser General Public License v2.1",
+  "summary": "Provides core application building blocks for libraries and applications written in C."
+}

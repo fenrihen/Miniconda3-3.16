@@ -1,0 +1,49 @@
+{
+  "about": {
+    "home": "http://www.ijg.org/",
+    "license": "Custom free software license",
+    "summary": "read/write jpeg COM, EXIF, IPTC medata"
+  },
+  "app": {},
+  "build": {
+    "entry_points": [],
+    "features": "",
+    "number": "0",
+    "script_env": [],
+    "string": "",
+    "track_features": []
+  },
+  "extra": {
+    "recipe-maintainers": [
+      "gillins"
+    ]
+  },
+  "package": {
+    "name": "jpeg",
+    "version": "9b"
+  },
+  "requirements": {
+    "build": "",
+    "conflicts": [],
+    "run": []
+  },
+  "source": {
+    "fn": "jpegsrc.v9b.tar.gz",
+    "git_rev": "",
+    "md5": "6a9996ce116ec5c52b4870dbcd6d3ddb",
+    "patches": "",
+    "path": "",
+    "svn_rev": "",
+    "url": "http://www.ijg.org/files/jpegsrc.v9b.tar.gz"
+  },
+  "test": {
+    "commands": [
+      "djpeg -dct int -ppm -outfile testout.ppm testorig.jpg"
+    ],
+    "files": [
+      "testorig.jpg"
+    ],
+    "imports": [],
+    "requires": ""
+  }
+}

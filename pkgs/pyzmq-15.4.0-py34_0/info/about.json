@@ -1,0 +1,5 @@
+{
+  "home": "https://github.com/zeromq/pyzmq",
+  "license": "BSD 3-clause",
+  "summary": "Python bindings for zeromq"
+}

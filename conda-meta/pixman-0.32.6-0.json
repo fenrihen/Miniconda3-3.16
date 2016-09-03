@@ -1,0 +1,41 @@
+{
+  "arch": "x86_64",
+  "binstar": {
+    "channel": "main",
+    "owner_id": "5528f42ce1dad12974506e8d",
+    "package_id": "56ea6e2f147ebb0b850c5a12"
+  },
+  "build": "0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "depends": [],
+  "files": [
+    "include/pixman-1/pixman-version.h",
+    "include/pixman-1/pixman.h",
+    "lib/libpixman-1.a",
+    "lib/libpixman-1.la",
+    "lib/libpixman-1.so",
+    "lib/libpixman-1.so.0",
+    "lib/libpixman-1.so.0.32.6",
+    "lib/pkgconfig/pixman-1.pc"
+  ],
+  "fn": "pixman-0.32.6-0.tar.bz2",
+  "license": "MIT",
+  "link": {
+    "source": "/home/fenrihen/Uygulamalar/Miniconda3-3.16/pkgs/pixman-0.32.6-0",
+    "type": "hard-link"
+  },
+  "machine": "x86_64",
+  "md5": "266fa2ca77a0284528ebb04d3f6545e9",
+  "name": "pixman",
+  "operatingsystem": "linux",
+  "platform": "linux",
+  "priority": 1,
+  "requires": [],
+  "schannel": "conda-forge",
+  "size": 3908549,
+  "subdir": "linux-64",
+  "target-triplet": "x86_64-any-linux",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/pixman-0.32.6-0.tar.bz2",
+  "version": "0.32.6"
+}

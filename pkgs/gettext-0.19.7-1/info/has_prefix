@@ -1,0 +1,12 @@
+/opt/anaconda1anaconda2anaconda3 text bin/autopoint
+/opt/anaconda1anaconda2anaconda3 text bin/gettextize
+/opt/anaconda1anaconda2anaconda3 text lib/gettext/user-email
+/opt/anaconda1anaconda2anaconda3 text lib/libasprintf.la
+/opt/anaconda1anaconda2anaconda3 text lib/libgettextlib.la
+/opt/anaconda1anaconda2anaconda3 text lib/libgettextpo.la
+/opt/anaconda1anaconda2anaconda3 text lib/libgettextsrc.la
+/opt/anaconda1anaconda2anaconda3 text share/doc/gettext/examples/installpaths
+/opt/anaconda1anaconda2anaconda3 text share/doc/gettext/gettext.1.html
+/opt/anaconda1anaconda2anaconda3 text share/doc/gettext/ngettext.1.html
+/opt/anaconda1anaconda2anaconda3 text share/man/man1/gettext.1
+/opt/anaconda1anaconda2anaconda3 text share/man/man1/ngettext.1

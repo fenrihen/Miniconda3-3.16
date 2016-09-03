@@ -1,0 +1,54 @@
+# This file created by conda-build 1.21.5
+# meta.yaml template originally from:
+# /recipe_root, last modified Sun Jul 17 13:50:40 2016
+# ------------------------------------------------
+
+package:
+    name: pango
+    version: 1.40.1
+source:
+    fn: pango-1.40.1.tar.xz
+    sha256: e27af54172c72b3ac6be53c9a4c67053e16c905e02addcf3a603ceb2005c1a40
+    url: http://ftp.gnome.org/pub/GNOME/sources/pango/1.40/pango-1.40.1.tar.xz
+build:
+    detect_binary_files_with_prefix: 'true'
+    number: '0'
+requirements:
+    build:
+        - perl
+        - harfbuzz
+        - fontconfig 2.11.*
+        - freetype 2.6.*
+        - libpng >=1.6.21,<1.7
+    run:
+        - harfbuzz
+        - fontconfig 2.11.*
+        - freetype 2.6.*
+        - libpng >=1.6.21,<1.7
+test:
+    commands:
+        - pango-view --help
+about:
+    description: 'Pango is a library for laying out and rendering of text, with an
+        emphasis
+
+        on internationalization. Pango can be used anywhere that text layout is
+
+        needed, though most of the work on Pango so far has been done in the
+
+        context of the GTK+ widget toolkit. Pango forms the core of text and font
+
+        handling for GTK+-2.x.
+
+        '
+    dev_url: https://github.com/phuang/pango
+    doc_url: http://www.pango.org/
+    home: http://www.pango.org/
+    license: LGPL-2.1
+    license_file: COPYING
+    summary: Text layout and rendering engine
+extra:
+    recipe-maintainers:
+        - ocefpaf
+        - ccordoba12
+        - jakirkham

@@ -1,0 +1,53 @@
+# This file created by conda-build 1.21.1
+# meta.yaml template originally from:
+# /recipe_root, last modified Thu Jun 23 17:43:07 2016
+# ------------------------------------------------
+
+package:
+    name: fontconfig
+    version: 2.11.1
+source:
+    fn: fontconfig-2.11.1.tar.bz2
+    md5: 824d000eb737af6e16c826dd3b2d6c90
+    patches:
+        - fc-cache.patch
+        - fcf.patch
+    url: http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.11.1.tar.bz2
+build:
+    binary_has_prefix_files:
+        - lib/libfontconfig.so.1.8.0
+    number: '3'
+requirements:
+    build:
+        - pkg-config
+        - libtool
+        - freetype 2.6.*
+        - libiconv
+        - libpng >=1.6.21,<1.7
+        - libxml2
+    run:
+        - freetype 2.6.*
+        - libiconv
+        - libpng >=1.6.21,<1.7
+        - libxml2
+test:
+    commands:
+        - fc-cache --help
+        - fc-cat --help
+        - fc-list --help
+        - fc-match --help
+        - fc-pattern --help
+        - fc-query --help
+        - fc-scan --help
+        - fc-validate --help
+        - test -f "${PREFIX}/lib/libfontconfig.a"
+        - test -f "${PREFIX}/lib/libfontconfig.so"
+about:
+    home: http://www.freedesktop.org/wiki/Software/fontconfig/
+    license: MIT
+    summary: A library for configuring and customizing font access.
+extra:
+    recipe-maintainers:
+        - ccordoba12
+        - jakirkham
+        - ocefpaf

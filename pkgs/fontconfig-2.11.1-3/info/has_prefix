@@ -1,0 +1,4 @@
+/opt/anaconda1anaconda2anaconda3 text etc/fonts/fonts.conf
+/opt/anaconda1anaconda2anaconda3 text lib/libfontconfig.la
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/fontconfig.pc
+/opt/conda/envs/_build_placehold_placehold_placehold_placehold_placehold_placeho binary lib/libfontconfig.so.1.8.0

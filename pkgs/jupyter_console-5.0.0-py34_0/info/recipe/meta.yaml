@@ -1,0 +1,47 @@
+{% set version = "5.0.0" %}
+
+package:
+  name: jupyter_console
+  version: {{ version }}
+
+source:
+  fn: jupyter_console-{{ version }}.tar.gz
+  url: https://github.com/jupyter/jupyter_console/archive/{{ version }}.tar.gz
+  sha256: e966b2b5bf9a1e8c5bd11a6335bb11f68ec585ea39b801721b2ed9dd964468fa
+
+build:
+  number: 0
+  script: python setup.py install
+  entry_points:
+    - jupyter-console = jupyter_console.app:main
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - jupyter_client
+    - ipython
+    - ipykernel
+    - prompt_toolkit
+    - pygments
+    - pexpect  # [not win]
+
+test:
+  commands:
+    - jupyter-console -h
+  imports:
+    - jupyter_console
+
+about:
+  home: http://jupyter.org
+  license: BSD 3-Clause
+  summary: Jupyter terminal console
+
+extra:
+  recipe-maintainers:
+    - jakirkham
+    - minrk
+    - pelson
+    - takluyver
+    - ocefpaf

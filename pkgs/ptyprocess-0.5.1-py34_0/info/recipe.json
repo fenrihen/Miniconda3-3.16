@@ -1,0 +1,38 @@
+{
+  "about": {
+    "home": "https://github.com/pexpect/ptyprocess",
+    "license": "ISC",
+    "summary": "Run a subprocess in a pseudo terminal"
+  },
+  "build": {
+    "number": "0"
+  },
+  "extra": {
+    "recipe-maintainers": [
+      "pelson",
+      "takluyver"
+    ]
+  },
+  "package": {
+    "name": "ptyprocess",
+    "version": "0.5.1"
+  },
+  "requirements": {
+    "build": [
+      "python"
+    ],
+    "run": [
+      "python"
+    ]
+  },
+  "source": {
+    "fn": "ptyprocess-0.5.1.tar.gz",
+    "md5": "94e537122914cc9ec9c1eadcd36e73a1",
+    "url": "https://pypi.python.org/packages/source/p/ptyprocess/ptyprocess-0.5.1.tar.gz"
+  },
+  "test": {
+    "imports": [
+      "ptyprocess"
+    ]
+  }
+}

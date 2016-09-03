@@ -1,0 +1,52 @@
+{
+  "arch": "x86_64",
+  "binstar": {
+    "channel": "main",
+    "owner_id": "5528f42ce1dad12974506e8d",
+    "package_id": "5661c32aea546b7a7b9cde7b"
+  },
+  "build": "py34_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "depends": [
+    "python 3.4*"
+  ],
+  "files": [
+    "lib/python3.4/site-packages/wcwidth-0.1.7-py3.4.egg-info/PKG-INFO",
+    "lib/python3.4/site-packages/wcwidth-0.1.7-py3.4.egg-info/SOURCES.txt",
+    "lib/python3.4/site-packages/wcwidth-0.1.7-py3.4.egg-info/dependency_links.txt",
+    "lib/python3.4/site-packages/wcwidth-0.1.7-py3.4.egg-info/top_level.txt",
+    "lib/python3.4/site-packages/wcwidth-0.1.7-py3.4.egg-info/zip-safe",
+    "lib/python3.4/site-packages/wcwidth/__init__.py",
+    "lib/python3.4/site-packages/wcwidth/__pycache__/__init__.cpython-34.pyc",
+    "lib/python3.4/site-packages/wcwidth/__pycache__/table_wide.cpython-34.pyc",
+    "lib/python3.4/site-packages/wcwidth/__pycache__/table_zero.cpython-34.pyc",
+    "lib/python3.4/site-packages/wcwidth/__pycache__/wcwidth.cpython-34.pyc",
+    "lib/python3.4/site-packages/wcwidth/table_wide.py",
+    "lib/python3.4/site-packages/wcwidth/table_zero.py",
+    "lib/python3.4/site-packages/wcwidth/tests/__init__.py",
+    "lib/python3.4/site-packages/wcwidth/tests/__pycache__/__init__.cpython-34.pyc",
+    "lib/python3.4/site-packages/wcwidth/tests/__pycache__/test_core.cpython-34.pyc",
+    "lib/python3.4/site-packages/wcwidth/tests/test_core.py",
+    "lib/python3.4/site-packages/wcwidth/wcwidth.py"
+  ],
+  "fn": "wcwidth-0.1.7-py34_0.tar.bz2",
+  "license": "MIT",
+  "link": {
+    "source": "/home/fenrihen/Uygulamalar/Miniconda3-3.16/pkgs/wcwidth-0.1.7-py34_0",
+    "type": "hard-link"
+  },
+  "machine": "x86_64",
+  "md5": "a3264560002d929f1d6afdeca1bdadbc",
+  "name": "wcwidth",
+  "operatingsystem": "linux",
+  "platform": "linux",
+  "priority": 1,
+  "requires": [],
+  "schannel": "conda-forge",
+  "size": 22036,
+  "subdir": "linux-64",
+  "target-triplet": "x86_64-any-linux",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/wcwidth-0.1.7-py34_0.tar.bz2",
+  "version": "0.1.7"
+}

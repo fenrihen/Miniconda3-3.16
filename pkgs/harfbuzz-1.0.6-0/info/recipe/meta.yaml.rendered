@@ -1,0 +1,52 @@
+# This file created by conda-build 1.21.11+0.g5b44ab3.dirty
+# meta.yaml template originally from:
+# /recipe_root, last modified Tue Aug 16 08:36:06 2016
+# ------------------------------------------------
+
+package:
+    name: harfbuzz
+    version: 1.0.6
+source:
+    fn: harfbuzz-1.0.6.tar.bz2
+    sha256: f616a7fbdc78a627043f9029000bf08c0c71df59cde4143fc92a014f6a993b26
+    url: http://www.freedesktop.org/software/harfbuzz/release/harfbuzz-1.0.6.tar.bz2
+build:
+    detect_binary_files_with_prefix: 'true'
+    number: '0'
+requirements:
+    build:
+        - perl
+        - pkg-config
+        - automake
+        - libtool
+        - cairo 1.12.*
+        - glib 2.*
+        - freetype 2.6.*
+        - icu 56.*
+    run:
+        - cairo 1.12.*
+        - glib 2.*
+        - freetype 2.6.*
+        - icu 56.*
+test:
+    commands:
+        - test -f $PREFIX/lib/libharfbuzz-icu.so
+        - test -f $PREFIX/lib/libharfbuzz.so
+        - hb-view --version
+        - conda inspect linkages -n _test harfbuzz
+about:
+    description: 'HarfBuzz is a text shaping library. New Harbuzz targets various
+        font
+
+        technologies while Old HarfBuzz targets only OpenType fonts.
+
+        '
+    dev_url: https://github.com/behdad/harfbuzz
+    doc_url: https://www.freedesktop.org/wiki/Software/HarfBuzz/
+    home: http://www.freedesktop.org/wiki/Software/HarfBuzz/
+    license: MIT
+    license_file: COPYING
+    summary: An OpenType text shaping engine
+extra:
+    recipe-maintainers:
+        - ocefpaf

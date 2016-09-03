@@ -1,0 +1,41 @@
+{
+  "arch": "x86_64",
+  "binstar": {
+    "channel": "main",
+    "owner_id": "5528f42ce1dad12974506e8d",
+    "package_id": "57318cc37860ba6d599ab82d"
+  },
+  "build": "py34_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "depends": [
+    "python 3.4*"
+  ],
+  "files": [
+    "lib/python3.4/site-packages/__pycache__/six.cpython-34.pyc",
+    "lib/python3.4/site-packages/six-1.10.0-py3.4.egg-info/PKG-INFO",
+    "lib/python3.4/site-packages/six-1.10.0-py3.4.egg-info/SOURCES.txt",
+    "lib/python3.4/site-packages/six-1.10.0-py3.4.egg-info/dependency_links.txt",
+    "lib/python3.4/site-packages/six-1.10.0-py3.4.egg-info/top_level.txt",
+    "lib/python3.4/site-packages/six.py"
+  ],
+  "fn": "six-1.10.0-py34_0.tar.bz2",
+  "license": "MIT",
+  "link": {
+    "source": "/home/fenrihen/Uygulamalar/Miniconda3-3.16/pkgs/six-1.10.0-py34_0",
+    "type": "hard-link"
+  },
+  "machine": "x86_64",
+  "md5": "63e397b5e79d7f9ef570a22d6b4e115a",
+  "name": "six",
+  "operatingsystem": "linux",
+  "platform": "linux",
+  "priority": 1,
+  "requires": [],
+  "schannel": "conda-forge",
+  "size": 18696,
+  "subdir": "linux-64",
+  "target-triplet": "x86_64-any-linux",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/six-1.10.0-py34_0.tar.bz2",
+  "version": "1.10.0"
+}

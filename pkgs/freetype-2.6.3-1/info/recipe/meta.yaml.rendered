@@ -1,0 +1,36 @@
+# This file created by conda-build 1.21.1
+# meta.yaml template originally from:
+# /recipe_root, last modified Thu Jun 23 02:04:25 2016
+# ------------------------------------------------
+
+package:
+    name: freetype
+    version: 2.6.3
+source:
+    fn: freetype-2.6.3.tar.bz2
+    patches: ''
+    sha256: 371e707aa522acf5b15ce93f11183c725b8ed1ee8546d7b3af549863045863a2
+    url: http://download.savannah.gnu.org/releases/freetype/freetype-2.6.3.tar.bz2
+build:
+    features: ''
+    number: '1'
+requirements:
+    build:
+        - zlib 1.2.*
+        - libpng >=1.6.21,<1.7
+    run:
+        - zlib 1.2.*
+        - libpng >=1.6.21,<1.7
+test:
+    commands:
+        - freetype-config --version
+        - conda inspect linkages -n _test freetype
+about:
+    home: http://freetype.sourceforge.net/index2.html
+    license: GPL-2.0 and FreeType (http://freetype.sourceforge.net/FTL.TXT)
+    summary: A TrueType Font Library
+extra:
+    recipe-maintainers:
+        - ccordoba12
+        - msarahan
+        - ocefpaf

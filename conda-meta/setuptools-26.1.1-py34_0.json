@@ -1,0 +1,29 @@
+{
+  "arch": "x86_64",
+  "build": "py34_0",
+  "build_number": 0,
+  "channel": "https://repo.continuum.io/pkgs/free/linux-64/",
+  "date": "2016-08-29",
+  "depends": [
+    "python 3.4*"
+  ],
+  "files": [
+    "bin/easy_install",
+    "bin/easy_install-3.4",
+    "lib/python3.4/site-packages/setuptools-26.1.1-py3.4.egg",
+    "lib/python3.4/site-packages/setuptools.pth"
+  ],
+  "license": "MIT",
+  "link": {
+    "source": "/home/fenrihen/Uygulamalar/Miniconda3-3.16/pkgs/setuptools-26.1.1-py34_0",
+    "type": "hard-link"
+  },
+  "md5": "ba7f8b95c1eab6df5a5d5cbe24f5c6d1",
+  "name": "setuptools",
+  "platform": "linux",
+  "requires": [],
+  "size": 537324,
+  "subdir": "linux-64",
+  "url": "https://repo.continuum.io/pkgs/free/linux-64/setuptools-26.1.1-py34_0.tar.bz2",
+  "version": "26.1.1"
+}

@@ -1,0 +1,4 @@
+bin/easy_install
+bin/easy_install-3.4
+lib/python3.4/site-packages/setuptools-26.1.1-py3.4.egg
+lib/python3.4/site-packages/setuptools.pth

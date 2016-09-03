@@ -1,0 +1,43 @@
+# This file created by conda-build 1.21.14+0.g4dfebe9.dirty
+# meta.yaml template originally from:
+# /recipe_root, last modified Wed Aug 31 10:25:12 2016
+# ------------------------------------------------
+
+package:
+    name: nbformat
+    version: 4.1.0
+source:
+    fn: nbformat-4.1.0.tar.gz
+    sha256: dbf6c0ed0cb7c5a7184536368f1dd1ada2d48fd6f016e0f9e9b69236e28c0857
+    url: https://pypi.io/packages/source/n/nbformat/nbformat-4.1.0.tar.gz
+build:
+    entry_points:
+        - jupyter-trust = nbformat.sign:TrustNotebookApp.launch_instance
+    number: '0'
+    script: pip install --no-deps .
+requirements:
+    build:
+        - python
+        - pip
+    run:
+        - python
+        - ipython_genutils
+        - traitlets
+        - jsonschema >=2.0,!=2.5.0
+        - jupyter_core
+test:
+    commands:
+        - jupyter-trust -h
+    imports:
+        - nbformat
+about:
+    home: http://jupyter.org
+    license: BSD 3-clause
+    summary: the base implementation of the Jupyter Notebook format
+extra:
+    recipe-maintainers:
+        - jakirkham
+        - minrk
+        - pelson
+        - takluyver
+        - ocefpaf

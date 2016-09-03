@@ -1,0 +1,16 @@
+{
+  "arch": "x86_64",
+  "build": "0",
+  "build_number": 0,
+  "depends": [
+    "cairo 1.12.*",
+    "freetype 2.6.*",
+    "glib 2.*",
+    "icu 56.*"
+  ],
+  "license": "MIT",
+  "name": "harfbuzz",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "version": "1.0.6"
+}

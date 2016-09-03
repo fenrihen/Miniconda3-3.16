@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "Exporter": {
+    "preprocessors": [
+      "jupyter_contrib_nbextensions.nbconvert_support.CodeFoldingPreprocessor",
+      "jupyter_contrib_nbextensions.nbconvert_support.PyMarkdownPreprocessor"
+    ],
+    "template_path": [
+      ".",
+      "/home/fenrihen/Uygulamalar/Miniconda3-3.16/lib/python3.4/site-packages/jupyter_contrib_nbextensions/templates"
+    ]
+  },
+  "NbConvertApp": {
+    "postprocessor_class": "jupyter_contrib_nbextensions.nbconvert_support.EmbedPostProcessor"
+  }
+}

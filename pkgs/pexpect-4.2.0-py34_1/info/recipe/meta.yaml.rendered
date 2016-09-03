@@ -1,0 +1,33 @@
+# This file created by conda-build 1.21.9
+# meta.yaml template originally from:
+# /recipe_root, last modified Mon Aug  1 20:17:30 2016
+# ------------------------------------------------
+
+package:
+    name: pexpect
+    version: 4.2.0
+source:
+    fn: pexpect-4.2.0.tar.gz
+    md5: 8071ec5df0f3d515daedafad672d1632
+    url: https://pypi.io/packages/source/p/pexpect/pexpect-4.2.0.tar.gz
+build:
+    number: '1'
+    script: python setup.py install
+requirements:
+    build:
+        - python
+    run:
+        - python
+        - ptyprocess
+test:
+    imports:
+        - pexpect
+about:
+    home: http://pexpect.sourceforge.net/
+    license: ISC
+    summary: Pexpect makes Python a better tool for controlling other applications.
+extra:
+    recipe-maintainers:
+        - jquast
+        - pelson
+        - takluyver

@@ -1,0 +1,34 @@
+# This file created by conda-build 1.21.7
+# meta.yaml template originally from:
+# /recipe_root, last modified Tue Jul 26 13:55:08 2016
+# ------------------------------------------------
+
+package:
+    name: openblas
+    version: 0.2.18
+source:
+    fn: openblas-0.2.18.tar.gz
+    md5: 805e7f660877d588ea7e3792cda2ee65
+    url: https://github.com/xianyi/OpenBLAS/archive/v0.2.18.tar.gz
+build:
+    number: '4'
+    track_features: ''
+requirements:
+    build:
+        - perl
+        - gcc
+    run:
+        - libgfortran
+test:
+    commands:
+        - test -f ${PREFIX}/lib/libopenblas.a
+        - test -f ${PREFIX}/lib/libopenblas.so
+about:
+    home: http://www.openblas.net/
+    license: BSD 3-Clause
+    summary: An optimized BLAS library based on GotoBLAS2 1.13 BSD version.
+extra:
+    recipe-maintainers:
+        - gillins
+        - groutr
+        - jakirkham

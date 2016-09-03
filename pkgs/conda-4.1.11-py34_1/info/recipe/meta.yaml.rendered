@@ -1,0 +1,58 @@
+# This file created by conda-build 1.21.11+0.g5b44ab3.dirty
+# meta.yaml template originally from:
+# /recipe_root, last modified Tue Aug  9 15:03:50 2016
+# ------------------------------------------------
+
+package:
+    name: conda
+    version: 4.1.11
+source:
+    fn: conda-4.1.11.tar.gz
+    sha256: dfc84d3ed8733b7326f1fd7d81f93ff06b4caac5f7854e29eca8bcc653a53eb8
+    url: https://github.com/conda/conda/archive/4.1.11.tar.gz
+build:
+    always_include_files:
+        - bin/conda
+        - bin/activate
+        - bin/deactivate
+        - exec/conda
+        - exec/activate
+        - exec/deactivate
+        - etc/fish/conf.d/conda.fish
+    entry_points:
+        - conda = conda.cli:main
+    number: '1'
+requirements:
+    build:
+        - python
+        - setuptools
+        - conda-env >=2.5
+        - pycosat
+        - pyyaml
+        - requests
+        - ruamel_yaml
+    run:
+        - python
+        - conda-env >=2.5
+        - pycosat
+        - pyyaml
+        - requests
+        - ruamel_yaml
+test:
+    commands:
+        - which conda
+        - conda --version
+        - conda info
+    imports:
+        - conda
+about:
+    home: https://github.com/conda/conda
+    license: BSD 3-Clause
+    summary: OS-agnostic, system-level binary package manager.
+extra:
+    recipe-maintainers:
+        - jakirkham
+        - kalefranz
+        - mcg1969
+        - msarahan
+        - pelson

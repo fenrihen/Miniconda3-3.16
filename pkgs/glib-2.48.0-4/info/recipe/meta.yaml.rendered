@@ -1,0 +1,47 @@
+# This file created by conda-build 1.21.5
+# meta.yaml template originally from:
+# /recipe_root, last modified Fri Jul  8 14:39:46 2016
+# ------------------------------------------------
+
+package:
+    name: glib
+    version: 2.48.0
+source:
+    fn: glib-2.48.0.tar.xz
+    patches:
+        - hardcoded-paths.patch
+    sha256: 744be6931ca914c68af98dc38ff6b0cf8381d65e335060faddfbf04c17147c34
+    url: http://ftp.acc.umu.se/pub/GNOME/sources/glib/2.48/glib-2.48.0.tar.xz
+build:
+    detect_binary_files_with_prefix: 'true'
+    number: '4'
+requirements:
+    build:
+        - python
+        - pkg-config
+        - libffi  >=3.0.0
+        - gettext
+        - zlib 1.2.*
+        - pcre
+        - libiconv
+    run:
+        - libffi  >=3.0.0
+        - gettext
+        - zlib 1.2.*
+        - pcre
+        - libiconv
+test:
+    commands:
+        - test -f ${PREFIX}/lib/libglib-2.0.so
+        - conda inspect linkages -n _test glib
+about:
+    home: https://developer.gnome.org/glib/
+    license: GNU Lesser General Public License v2.1
+    summary: Provides core application building blocks for libraries and applications
+        written in C.
+extra:
+    recipe-maintainers:
+        - ccordoba12
+        - jakirkham
+        - scopatz
+        - ocefpaf

@@ -1,0 +1,60 @@
+{
+  "about": {
+    "home": "http://github.com/mitsuhiko/markupsafe",
+    "license": "BSD 3-clause",
+    "summary": "Terminals served by tornado websockets"
+  },
+  "app": {},
+  "build": {
+    "entry_points": [],
+    "features": [],
+    "number": "0",
+    "script": "python setup.py install",
+    "script_env": [],
+    "string": "",
+    "track_features": []
+  },
+  "extra": {
+    "recipe-maintainers": [
+      "pelson",
+      "takluyver"
+    ]
+  },
+  "package": {
+    "name": "terminado",
+    "version": "0.6"
+  },
+  "requirements": {
+    "build": [
+      "python"
+    ],
+    "conflicts": [],
+    "run": [
+      "python",
+      "ptyprocess",
+      "tornado >=4"
+    ]
+  },
+  "source": {
+    "fn": "terminado-0.6.tar.gz",
+    "git_rev": "",
+    "md5": "",
+    "patches": [],
+    "path": "",
+    "sha256": "6a1cfe8ede41962827ca8260bc64f387de85be62fd4e936bdde2ecf2a433931c",
+    "svn_rev": "",
+    "url": "https://github.com/takluyver/terminado/archive/0.6.tar.gz"
+  },
+  "test": {
+    "commands": [
+      "nosetests terminado"
+    ],
+    "files": [],
+    "imports": [
+      "terminado"
+    ],
+    "requires": [
+      "nose"
+    ]
+  }
+}

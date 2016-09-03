@@ -1,0 +1,7 @@
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/pango.pc
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/pangocairo.pc
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/pangoft2.pc
+/opt/conda/envs/_build_placehold_placehold_placehold_placehold_placehold_placeho binary bin/pango-view
+/opt/conda/envs/_build_placehold_placehold_placehold_placehold_placehold_placeho binary lib/libpango-1.0.so.0.4000.1
+/opt/conda/envs/_build_placehold_placehold_placehold_placehold_placehold_placeho binary lib/libpangocairo-1.0.so.0.4000.1
+/opt/conda/envs/_build_placehold_placehold_placehold_placehold_placehold_placeho binary lib/libpangoft2-1.0.so.0.4000.1

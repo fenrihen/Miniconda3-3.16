@@ -1,0 +1,5 @@
+{
+  "home": "https://github.com/lepture/mistune",
+  "license": "BSD 3-clause",
+  "summary": "The fastest markdown parser in pure Python"
+}

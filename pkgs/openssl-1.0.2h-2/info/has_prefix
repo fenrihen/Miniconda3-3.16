@@ -1,0 +1,7 @@
+/opt/anaconda1anaconda2anaconda3 text bin/c_rehash
+/opt/anaconda1anaconda2anaconda3 text include/openssl/opensslconf.h
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/libcrypto.pc
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/libssl.pc
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/openssl.pc
+/opt/anaconda1anaconda2anaconda3 text ssl/misc/CA.pl
+/opt/conda/envs/_build_placehold_placehold_placehold_placehold_placehold_placeho binary lib/libcrypto.so.1.0.0

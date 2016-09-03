@@ -1,0 +1,7 @@
+{
+  "dev_url": "https://github.com/pypa/pip",
+  "doc_url": "https://pip.pypa.io/en/stable/",
+  "home": "https://pip.pypa.io/en/stable/",
+  "license": "MIT",
+  "summary": "PyPA recommended tool for installing Python packages"
+}

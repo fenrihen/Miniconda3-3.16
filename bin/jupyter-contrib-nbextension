@@ -1,0 +1,10 @@
+#!/home/fenrihen/Uygulamalar/Miniconda3-3.16/bin/python
+# EASY-INSTALL-ENTRY-SCRIPT: 'jupyter-contrib-nbextensions==0.1.0','console_scripts','jupyter-contrib-nbextension'
+__requires__ = 'jupyter-contrib-nbextensions==0.1.0'
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.exit(
+        load_entry_point('jupyter-contrib-nbextensions==0.1.0', 'console_scripts', 'jupyter-contrib-nbextension')()
+    )

@@ -1,0 +1,11 @@
+{
+  "arch": "x86_64",
+  "build": "1",
+  "build_number": 1,
+  "depends": [],
+  "license": "GNU General Public License v3",
+  "name": "gettext",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "version": "0.19.7"
+}

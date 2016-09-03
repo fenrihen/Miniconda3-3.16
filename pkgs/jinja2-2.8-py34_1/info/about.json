@@ -1,0 +1,8 @@
+{
+  "description": "Jinja2 is a full featured template engine for Python. It has full unicode\nsupport, an optional integrated sandboxed execution environment, widely\nused and BSD licensed.\n",
+  "dev_url": "https://github.com/pallets/jinja",
+  "doc_url": "http://jinja.pocoo.org/docs/dev/",
+  "home": "http://jinja.pocoo.org",
+  "license": "3-Clause BSD",
+  "summary": "An easy to use stand-alone template engine written in pure python."
+}

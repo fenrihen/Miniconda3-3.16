@@ -1,0 +1,34 @@
+# This file created by conda-build 1.21.5
+# meta.yaml template originally from:
+# /recipe_root, last modified Mon Jul 11 20:01:28 2016
+# ------------------------------------------------
+
+package:
+    name: psutil
+    version: 4.3.0
+source:
+    fn: psutil-4.3.0.tar.gz
+    md5: ca97cf5f09c07b075a12a68b9d44a67d
+    url: https://pypi.io/packages/source/p/psutil/psutil-4.3.0.tar.gz
+build:
+    number: '0'
+    script: python setup.py install --single-version-externally-managed --record record.txt
+requirements:
+    build:
+        - python
+        - setuptools
+    run:
+        - python
+test:
+    imports:
+        - psutil
+        - psutil.tests
+    requires: ''
+about:
+    home: https://github.com/giampaolo/psutil
+    license: BSD 3-Clause
+    summary: A cross-platform process and system utilities module for Python
+extra:
+    recipe-maintainers:
+        - jakirkham
+        - pelson

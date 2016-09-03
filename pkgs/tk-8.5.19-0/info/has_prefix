@@ -1,0 +1,5 @@
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/tcl.pc
+/opt/anaconda1anaconda2anaconda3 text lib/pkgconfig/tk.pc
+/opt/anaconda1anaconda2anaconda3 text lib/tclConfig.sh
+/opt/anaconda1anaconda2anaconda3 text lib/tkConfig.sh
+/opt/conda/envs/_build_placehold_placehold_placehold_placehold_placehold_placeho binary lib/libtcl8.5.so

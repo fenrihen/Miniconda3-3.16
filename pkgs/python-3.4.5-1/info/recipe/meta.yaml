@@ -1,0 +1,61 @@
+package:
+  name: python
+  version: 3.4.5
+
+source:
+  fn: Python-3.4.5.tgz
+  url: https://www.python.org/ftp/python/3.4.5/Python-3.4.5.tgz
+  sha256: 997aca4dd8692f3c954658a3db11c1d0862bcbf8eadd6a164746eb33d317c034
+  patches:
+      - omit-local-site-packages.patch  # [osx]
+      - osx64-dist.patch                # [osx and x86_64]
+      - win-find_exe.patch              # [win]
+      - win-library_bin.patch           # [win]
+
+build:
+  number: 1
+  no_link:
+    - bin/python3.4     # [unix]
+    - DLLs/_ctypes.pyd  # [win]
+  track_features:
+    - vc10              # [win]
+
+requirements:
+  build:
+    - bzip2 1.0.*       # [unix]
+    - openssl 1.0.*     # [unix]
+    - readline 6.2*     # [unix]
+    - sqlite 3.13.*     # [unix]
+    - tk 8.5.*          # [unix]
+    - xz 5.2.*          # [unix]
+    - zlib 1.2.*        # [unix]
+    - ncurses 5.9*      # [linux]
+  run:
+    - openssl 1.0.*     # [unix]
+    - readline 6.2*     # [unix]
+    - sqlite 3.13.*     # [unix]
+    - tk 8.5.*          # [unix]
+    - xz 5.2.*          # [unix]
+    - zlib 1.2.*        # [unix]
+    - ncurses 5.9*      # [linux]
+    - vs2010_runtime    # [win]
+
+test:
+  commands:
+    - python -V
+    - python3 -V            # [unix]
+    - 2to3 -h
+    - pydoc -h
+    - python3-config --help  # [unix]
+
+about:
+  home: http://www.python.org/
+  license: PSF
+  summary: General purpose programming language
+      
+extra:
+  recipe-maintainers:
+    - jakirkham
+    - jjhelmus
+    - msarahan
+    - pelson

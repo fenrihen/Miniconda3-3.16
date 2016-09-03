@@ -1,0 +1,46 @@
+{
+  "arch": "x86_64",
+  "binstar": {
+    "channel": "main",
+    "owner_id": "5528f42ce1dad12974506e8d",
+    "package_id": "57096cc6878cc60a5a980e48"
+  },
+  "build": "py34_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "depends": [
+    "python 3.4*"
+  ],
+  "files": [
+    "lib/python3.4/site-packages/backports/configparser/__init__.py",
+    "lib/python3.4/site-packages/backports/configparser/__pycache__/__init__.cpython-34.pyc",
+    "lib/python3.4/site-packages/backports/configparser/__pycache__/helpers.cpython-34.pyc",
+    "lib/python3.4/site-packages/backports/configparser/helpers.py",
+    "lib/python3.4/site-packages/configparser-3.5.0b2-py3.4-nspkg.pth",
+    "lib/python3.4/site-packages/configparser-3.5.0b2-py3.4.egg-info/PKG-INFO",
+    "lib/python3.4/site-packages/configparser-3.5.0b2-py3.4.egg-info/SOURCES.txt",
+    "lib/python3.4/site-packages/configparser-3.5.0b2-py3.4.egg-info/dependency_links.txt",
+    "lib/python3.4/site-packages/configparser-3.5.0b2-py3.4.egg-info/namespace_packages.txt",
+    "lib/python3.4/site-packages/configparser-3.5.0b2-py3.4.egg-info/not-zip-safe",
+    "lib/python3.4/site-packages/configparser-3.5.0b2-py3.4.egg-info/top_level.txt"
+  ],
+  "fn": "configparser-3.5.0b2-py34_0.tar.bz2",
+  "license": "MIT",
+  "link": {
+    "source": "/home/fenrihen/Uygulamalar/Miniconda3-3.16/pkgs/configparser-3.5.0b2-py34_0",
+    "type": "hard-link"
+  },
+  "machine": "x86_64",
+  "md5": "8627b9271dd3573fc110012639fb7a00",
+  "name": "configparser",
+  "operatingsystem": "linux",
+  "platform": "linux",
+  "priority": 1,
+  "requires": [],
+  "schannel": "conda-forge",
+  "size": 31045,
+  "subdir": "linux-64",
+  "target-triplet": "x86_64-any-linux",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/configparser-3.5.0b2-py34_0.tar.bz2",
+  "version": "3.5.0b2"
+}

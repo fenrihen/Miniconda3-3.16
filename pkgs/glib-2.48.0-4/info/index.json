@@ -1,0 +1,17 @@
+{
+  "arch": "x86_64",
+  "build": "4",
+  "build_number": 4,
+  "depends": [
+    "gettext",
+    "libffi >=3.0.0",
+    "libiconv",
+    "pcre",
+    "zlib 1.2.*"
+  ],
+  "license": "GNU Lesser General Public License v2.1",
+  "name": "glib",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "version": "2.48.0"
+}

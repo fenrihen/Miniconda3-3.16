@@ -1,0 +1,33 @@
+# This file created by conda-build 1.21.6
+# meta.yaml template originally from:
+# /recipe_root, last modified Tue Jul 19 08:54:27 2016
+# ------------------------------------------------
+
+package:
+    name: pickleshare
+    version: 0.7.3
+source:
+    fn: pickleshare-0.7.3.tar.gz
+    md5: 0ccdd8e65737a92eec47888dae61ff95
+    url: https://pypi.io/packages/source/p/pickleshare/pickleshare-0.7.3.tar.gz
+build:
+    number: '0'
+    script: python setup.py install --single-version-externally-managed --record=record.txt
+requirements:
+    build:
+        - python
+        - setuptools
+    run:
+        - python
+test:
+    imports:
+        - pickleshare
+about:
+    home: https://github.com/vivainio/pickleshare
+    license: MIT
+    summary: Tiny 'shelve'-like database with concurrency support
+extra:
+    recipe-maintainers:
+        - pelson
+        - takluyver
+        - ocefpaf

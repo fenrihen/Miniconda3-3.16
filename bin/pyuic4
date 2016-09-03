@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /home/fenrihen/Uygulamalar/Miniconda3-3.16/bin/python /home/fenrihen/Uygulamalar/Miniconda3-3.16/lib/python3.4/site-packages/PyQt4/uic/pyuic.py ${1+"$@"}

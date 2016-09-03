@@ -1,0 +1,46 @@
+# This file created by conda-build 1.21.7
+# meta.yaml template originally from:
+# /recipe_root, last modified Fri Jul 29 21:55:07 2016
+# ------------------------------------------------
+
+package:
+    name: jupyter_contrib_core
+    version: 0.3.0
+source:
+    fn: jupyter_contrib_core-0.3.0.tar.gz
+    md5: cc53caaee0f2b0427189ed80bd86da8b
+    url: https://pypi.io/packages/source/j/jupyter_contrib_core/jupyter_contrib_core-0.3.0.tar.gz
+build:
+    number: '0'
+    script: python setup.py install --single-version-externally-managed --record=record.txt
+requirements:
+    build:
+        - python
+        - setuptools
+    run:
+        - python
+        - setuptools
+        - jupyter_core
+        - notebook >=4.0
+        - tornado
+        - traitlets
+test:
+    commands:
+        - jupyter contrib --help
+    imports:
+        - jupyter_contrib_core
+        - jupyter_contrib_core.application
+        - jupyter_contrib_core.notebook_compat
+        - jupyter_contrib_core.notebook_compat.nbextensions
+        - jupyter_contrib_core.notebook_compat.serverextensions
+        - jupyter_contrib_core.notebook_compat._compat
+        - jupyter_contrib_core.notebook_compat._compat.nbextensions
+        - jupyter_contrib_core.notebook_compat._compat.serverextensions
+about:
+    home: https://github.com/jupyter-contrib/jupyter_contrib_core
+    license: BSD 3-clause
+    license_file: LICENSE.txt
+    summary: Common utilities for jupyter-contrib projects.
+extra:
+    recipe-maintainers:
+        - jcb91

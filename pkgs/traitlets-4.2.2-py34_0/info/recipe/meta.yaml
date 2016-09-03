@@ -1,0 +1,39 @@
+{% set version = "4.2.2" %}
+
+package:
+  name: traitlets
+  version: {{ version }}
+
+source:
+  fn: traitlets-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/t/traitlets/traitlets-{{ version }}.tar.gz
+  md5: d0725f9818bd9e112a6531da26d433b8
+
+build:
+  number: 0
+  script: pip install --no-deps .
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - ipython_genutils
+    - decorator
+    # enum34 and six will be added in a later release
+
+test:
+  imports:
+    - traitlets
+    - traitlets.config
+
+about:
+  home: http://ipython.org/
+  license: BSD 3-clause
+  summary: configuration system for Python applications
+
+extra:
+  recipe-maintainers:
+    - jakirkham
+    - pelson
+    - minrk

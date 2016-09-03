@@ -1,0 +1,44 @@
+# This file created by conda-build 1.21.11+0.g5b44ab3.dirty
+# meta.yaml template originally from:
+# /recipe_root, last modified Thu Aug 11 17:17:42 2016
+# ------------------------------------------------
+
+package:
+    name: pygments
+    version: 2.1.3
+source:
+    fn: Pygments-2.1.3.tar.gz
+    md5: ed3fba2467c8afcda4d317e4ef2c6150
+    url: https://pypi.python.org/packages/source/P/Pygments/Pygments-2.1.3.tar.gz
+build:
+    entry_points:
+        - pygmentize = pygments.cmdline:main
+    number: '1'
+    script: python setup.py install --single-version-externally-managed --record=record.txt
+requirements:
+    build:
+        - python
+        - setuptools
+    run:
+        - python
+        - setuptools
+test:
+    commands:
+        - pygmentize -h
+    imports:
+        - pygments.styles
+        - pygments
+        - pygments.lexers
+        - pygments.filters
+        - pygments.formatters
+        - pygments.plugin
+about:
+    home: http://pygments.org/
+    license: BSD 2-clause
+    summary: Pygments is a generic syntax highlighter suitable for use in code hosting,
+        forums, wikis or other applications that need to prettify source code.
+extra:
+    recipe-maintainers:
+        - jakirkham
+        - pelson
+        - ocefpaf

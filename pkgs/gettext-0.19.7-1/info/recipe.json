@@ -1,0 +1,51 @@
+{
+  "about": {
+    "home": "https://www.gnu.org/software/gettext/",
+    "license": "GNU General Public License v3",
+    "summary": "Internationalization package."
+  },
+  "app": {},
+  "build": {
+    "entry_points": [],
+    "features": [],
+    "number": "1",
+    "script_env": [],
+    "string": "",
+    "track_features": []
+  },
+  "extra": {
+    "recipe-maintainers": [
+      "scopatz"
+    ]
+  },
+  "package": {
+    "name": "gettext",
+    "version": "0.19.7"
+  },
+  "requirements": {
+    "build": [
+      "libffi",
+      "libiconv"
+    ],
+    "conflicts": [],
+    "run": []
+  },
+  "source": {
+    "fn": "gettext-0.19.7.tar.xz",
+    "git_rev": "",
+    "md5": "",
+    "patches": [],
+    "path": "",
+    "sha256": "378fa86a091cec3acdece3c961bb8d8c0689906287809a8daa79dc0c6398d934",
+    "svn_rev": "",
+    "url": "ftp://ftp.gnu.org/pub/gnu/gettext/gettext-0.19.7.tar.xz"
+  },
+  "test": {
+    "commands": [
+      "test -f ${PREFIX}/lib/libgettextlib.so"
+    ],
+    "files": [],
+    "imports": [],
+    "requires": []
+  }
+}

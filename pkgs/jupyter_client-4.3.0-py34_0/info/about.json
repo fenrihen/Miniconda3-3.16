@@ -1,0 +1,5 @@
+{
+  "home": "http://jupyter.org",
+  "license": "BSD 3-clause",
+  "summary": "jupyter_client contains the reference implementation of the Jupyter protocol."
+}

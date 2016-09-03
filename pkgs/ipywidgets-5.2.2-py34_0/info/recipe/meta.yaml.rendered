@@ -1,0 +1,38 @@
+# This file created by conda-build 1.21.5
+# meta.yaml template originally from:
+# /recipe_root, last modified Thu Jul 14 22:58:49 2016
+# ------------------------------------------------
+
+package:
+    name: ipywidgets
+    version: 5.2.2
+source:
+    fn: ipywidgets-5.2.2.tar.gz
+    md5: 317e49cc76353352939c2527920f3ebe
+    url: https://pypi.io/packages/source/i/ipywidgets/ipywidgets-5.2.2.tar.gz
+build:
+    number: '0'
+    script: python -m pip install --no-deps .
+requirements:
+    build:
+        - python
+    run:
+        - python
+        - ipython >=4.0.0
+        - ipykernel >=4.2.2
+        - traitlets >=4.2.1
+        - widgetsnbextension >=1.2.6
+test:
+    imports:
+        - ipywidgets
+about:
+    home: https://github.com/ipython/ipywidgets
+    license: BSD 3-clause
+    summary: Widgets for the Jupyter Notebook
+extra:
+    recipe-maintainers:
+        - jakirkham
+        - minrk
+        - pelson
+        - SylvainCorlay
+        - willingc

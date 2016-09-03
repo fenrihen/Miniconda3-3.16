@@ -1,0 +1,32 @@
+# This file created by conda-build 1.21.3
+# meta.yaml template originally from:
+# /recipe_root, last modified Fri Jul  1 11:33:49 2016
+# ------------------------------------------------
+
+package:
+    name: entrypoints
+    version: 0.2.2
+source:
+    fn: 0.2.2.tar.gz
+    md5: 7dae980f7c6affd777dc60a51c8d0b0b
+    url: https://github.com/takluyver/entrypoints/archive/0.2.2.tar.gz
+build:
+    number: '0'
+requirements:
+    build:
+        - python
+    run:
+        - python
+        - configparser
+test:
+    imports:
+        - entrypoints
+about:
+    home: http://entrypoints.readthedocs.org/en/latest/
+    license: MIT
+    summary: Discover and load entry points from installed packages
+extra:
+    recipe-maintainers:
+        - pelson
+        - minrk
+        - takluyver

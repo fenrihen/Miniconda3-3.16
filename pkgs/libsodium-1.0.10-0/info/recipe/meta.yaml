@@ -1,0 +1,30 @@
+{% set version = "1.0.10" %}
+
+package:
+  name: libsodium
+  version: {{ version }}
+
+source:
+  fn: libsodium-{{ version }}.tar.gz
+  url: https://github.com/jedisct1/libsodium/releases/download/{{ version }}/libsodium-{{ version }}.tar.gz
+  sha1: f34f78330cf1a4f69acce5f3fc2ada2d4098c7f4
+
+build:
+  skip: true    # [win]
+  number: 0
+
+test:
+  commands:
+    - test -f ${PREFIX}/lib/libsodium.a          # [unix]
+    - test -f ${PREFIX}/lib/libsodium.dylib      # [osx]
+    - test -f ${PREFIX}/lib/libsodium.so         # [linux]
+
+about:
+  home: https://github.com/jedisct1/libsodium
+  license: ISC
+  summary: A modern and easy-to-use crypto library.
+
+extra:
+  recipe-maintainers:
+    - jakirkham
+    - minrk

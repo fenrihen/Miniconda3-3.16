@@ -1,0 +1,74 @@
+{
+  "about": {
+    "home": "http://jupyter.org",
+    "license": "BSD 3-Clause",
+    "summary": "Converting Jupyter Notebooks"
+  },
+  "app": {},
+  "build": {
+    "entry_points": [
+      "jupyter-nbconvert = nbconvert.nbconvertapp:main"
+    ],
+    "features": [],
+    "number": "0",
+    "script": "python setup.py install",
+    "script_env": [],
+    "string": "",
+    "track_features": []
+  },
+  "extra": {
+    "recipe-maintainers": [
+      "jakirkham",
+      "pelson",
+      "minrk"
+    ]
+  },
+  "package": {
+    "name": "nbconvert",
+    "version": "4.2.0"
+  },
+  "requirements": {
+    "build": [
+      "python"
+    ],
+    "conflicts": [],
+    "run": [
+      "python",
+      "mistune >0.6",
+      "jinja2",
+      "pygments",
+      "traitlets",
+      "jupyter_core",
+      "nbformat",
+      "entrypoints"
+    ]
+  },
+  "source": {
+    "fn": "nbconvert-4.2.0.tar.gz",
+    "git_rev": "",
+    "md5": "",
+    "patches": [],
+    "path": "",
+    "sha256": "32394be5a20f39f99fabfb9b2f2625df17f1c2a6699182ca41598e98e7cc9610",
+    "svn_rev": "",
+    "url": "https://github.com/jupyter/nbconvert/archive/4.2.0.tar.gz"
+  },
+  "test": {
+    "commands": [
+      "jupyter-nbconvert --help"
+    ],
+    "files": [],
+    "imports": [
+      "nbconvert",
+      "nbconvert.exporters",
+      "nbconvert.filters",
+      "nbconvert.postprocessors",
+      "nbconvert.preprocessors",
+      "nbconvert.resources",
+      "nbconvert.tests",
+      "nbconvert.utils",
+      "nbconvert.writers"
+    ],
+    "requires": []
+  }
+}

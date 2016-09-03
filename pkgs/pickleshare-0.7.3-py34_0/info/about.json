@@ -1,0 +1,5 @@
+{
+  "home": "https://github.com/vivainio/pickleshare",
+  "license": "MIT",
+  "summary": "Tiny 'shelve'-like database with concurrency support"
+}

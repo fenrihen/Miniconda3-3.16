@@ -1,0 +1,31 @@
+# This file created by conda-build 1.21.2
+# meta.yaml template originally from:
+# /recipe_root, last modified Mon Jun 27 19:54:00 2016
+# ------------------------------------------------
+
+package:
+    name: markupsafe
+    version: '0.23'
+source:
+    fn: MarkupSafe-0.23.tar.gz
+    md5: f5ab3deee4c37cd6a922fb81e730da6e
+    url: https://pypi.io/packages/source/M/MarkupSafe/MarkupSafe-0.23.tar.gz
+build:
+    number: '0'
+    script: python setup.py install --single-version-externally-managed --record record.txt
+requirements:
+    build:
+        - python
+        - setuptools
+    run:
+        - python
+test:
+    imports:
+        - markupsafe
+about:
+    home: http://github.com/mitsuhiko/markupsafe
+    license: BSD 3-clause
+    summary: A Python module that implements the jinja2.Markup string
+extra:
+    recipe-maintainers:
+        - pelson

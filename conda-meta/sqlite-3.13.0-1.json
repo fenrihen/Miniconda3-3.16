@@ -1,0 +1,40 @@
+{
+  "arch": "x86_64",
+  "binstar": {
+    "channel": "main",
+    "owner_id": "5528f42ce1dad12974506e8d",
+    "package_id": "5732e6517860ba0db70c9e4e"
+  },
+  "build": "1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64/",
+  "depends": [],
+  "files": [
+    "bin/sqlite3",
+    "include/sqlite3.h",
+    "include/sqlite3ext.h",
+    "lib/libsqlite3.a",
+    "lib/libsqlite3.la",
+    "lib/libsqlite3.so",
+    "lib/libsqlite3.so.0",
+    "lib/libsqlite3.so.0.8.6",
+    "lib/pkgconfig/sqlite3.pc"
+  ],
+  "license": "Public-Domain (http://www.sqlite.org/copyright.html)",
+  "license_family": "Public-Domain",
+  "link": {
+    "source": "/home/fenrihen/Uygulamalar/Miniconda3-3.16/pkgs/sqlite-3.13.0-1",
+    "type": "hard-link"
+  },
+  "machine": "x86_64",
+  "md5": "a54fc6054a2271c92ba43b857c83c39a",
+  "name": "sqlite",
+  "operatingsystem": "linux",
+  "platform": "linux",
+  "requires": [],
+  "size": 5160488,
+  "subdir": "linux-64",
+  "target-triplet": "x86_64-any-linux",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/sqlite-3.13.0-1.tar.bz2",
+  "version": "3.13.0"
+}

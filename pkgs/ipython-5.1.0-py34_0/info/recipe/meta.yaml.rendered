@@ -1,0 +1,49 @@
+# This file created by conda-build 1.21.11+0.g5b44ab3.dirty
+# meta.yaml template originally from:
+# /recipe_root, last modified Mon Aug 15 18:10:01 2016
+# ------------------------------------------------
+
+package:
+    name: ipython
+    version: 5.1.0
+source:
+    fn: ipython-5.1.0.tar.gz
+    sha256: 7ef4694e1345913182126b219aaa4a0047e191af414256da6772cf249571b961
+    url: https://pypi.io/packages/source/i/ipython/ipython-5.1.0.tar.gz
+build:
+    entry_points:
+        - ipython = IPython:start_ipython
+        - ipython3 = IPython:start_ipython
+    number: '0'
+    script: python -m pip install --no-deps .
+requirements:
+    build:
+        - python
+        - pip
+    run:
+        - python
+        - pickleshare
+        - simplegeneric >0.8
+        - prompt_toolkit >=1.0.3,<2.0.0
+        - pygments
+        - decorator
+        - traitlets
+        - pexpect
+        - backports.shutil_get_terminal_size
+test:
+    commands:
+        - ipython -h
+        - ipython3 -h
+    imports:
+        - IPython
+about:
+    home: http://ipython.org/
+    license: BSD 3-clause
+    license_file: COPYING.rst
+    summary: 'IPython: Productive Interactive Computing'
+extra:
+    recipe-maintainers:
+        - jakirkham
+        - pelson
+        - minrk
+        - ocefpaf

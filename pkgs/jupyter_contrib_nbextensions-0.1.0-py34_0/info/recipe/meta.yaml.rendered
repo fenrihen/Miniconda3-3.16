@@ -1,0 +1,60 @@
+# This file created by conda-build 1.21.9
+# meta.yaml template originally from:
+# /recipe_root, last modified Thu Aug  4 12:15:42 2016
+# ------------------------------------------------
+
+package:
+    name: jupyter_contrib_nbextensions
+    version: 0.1.0
+source:
+    fn: jupyter_contrib_nbextensions-0.1.0.tar.gz
+    sha256: eb41c8fa48383ac1487deacfdb1f22661775651a97f520b4f7d1aaa1f28d04cb
+    url: https://pypi.io/packages/source/j/jupyter_contrib_nbextensions/jupyter_contrib_nbextensions-0.1.0.tar.gz
+build:
+    number: '0'
+    script: python setup.py install --single-version-externally-managed --record=record.txt
+requirements:
+    build:
+        - python
+        - setuptools
+    run:
+        - python
+        - ipython_genutils
+        - jupyter_contrib_core >=0.3
+        - jupyter_core
+        - jupyter_nbextensions_configurator
+        - nbconvert
+        - notebook >=4.0
+        - psutil >=2.2.1
+        - pyyaml
+        - setuptools
+        - tornado
+        - traitlets
+test:
+    commands:
+        - jupyter contrib nbextension --help
+        - jupyter contrib nbextension install --help
+        - jupyter contrib nbextension uninstall --help
+        - jupyter contrib nbextension migrate --help
+    imports:
+        - jupyter_contrib_nbextensions
+        - jupyter_contrib_nbextensions.application
+        - jupyter_contrib_nbextensions.install
+        - jupyter_contrib_nbextensions.migrate
+        - jupyter_contrib_nbextensions.nbconvert_support
+        - jupyter_contrib_nbextensions.nbconvert_support.post_embedhtml
+        - jupyter_contrib_nbextensions.nbconvert_support.pp_highlighter
+        - jupyter_contrib_nbextensions.nbconvert_support.pre_codefolding
+        - jupyter_contrib_nbextensions.nbconvert_support.pre_collapsible_headings
+        - jupyter_contrib_nbextensions.nbconvert_support.pre_pymarkdown
+        - jupyter_contrib_nbextensions.nbconvert_support.pre_svg2pdf
+        - jupyter_contrib_nbextensions.nbconvert_support.strip_output_prompt
+        - jupyter_contrib_nbextensions.nbconvert_support.toc2
+about:
+    home: https://github.com/ipython-contrib/jupyter_contrib_nbextensions
+    license: BSD 3-clause
+    license_file: COPYING.rst
+    summary: A collection of various different notebook extensions for Jupyter
+extra:
+    recipe-maintainers:
+        - jcb91

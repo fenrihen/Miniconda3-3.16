@@ -1,0 +1,54 @@
+{
+  "about": {
+    "home": "https://github.com/Julian/jsonschema",
+    "license": "MIT",
+    "summary": "Python implementation of JSON Schema"
+  },
+  "app": {},
+  "build": {
+    "entry_points": [],
+    "features": [],
+    "number": "0",
+    "script": "pip install .",
+    "script_env": [],
+    "string": "",
+    "track_features": []
+  },
+  "extra": {
+    "recipe-maintainers": [
+      "minrk"
+    ]
+  },
+  "package": {
+    "name": "jsonschema",
+    "version": "2.5.1"
+  },
+  "requirements": {
+    "build": [
+      "python",
+      "pip",
+      "vcversioner"
+    ],
+    "conflicts": [],
+    "run": [
+      "python"
+    ]
+  },
+  "source": {
+    "fn": "jsonschema-2.5.1.tar.gz",
+    "git_rev": "",
+    "md5": "374e848fdb69a3ce8b7e778b47c30640",
+    "patches": [],
+    "path": "",
+    "svn_rev": "",
+    "url": "https://pypi.python.org/packages/58/0d/c816f5ea5adaf1293a1d81d32e4cdfdaf8496973aa5049786d7fdb14e7e7/jsonschema-2.5.1.tar.gz"
+  },
+  "test": {
+    "commands": [],
+    "files": [],
+    "imports": [
+      "jsonschema"
+    ],
+    "requires": []
+  }
+}

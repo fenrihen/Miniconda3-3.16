@@ -1,0 +1,48 @@
+# This file created by conda-build 1.21.11+0.g5b44ab3.dirty
+# meta.yaml template originally from:
+# /recipe_root, last modified Thu Aug 11 05:50:50 2016
+# ------------------------------------------------
+
+package:
+    name: libxml2
+    version: 2.9.4
+source:
+    fn: libxml2-2.9.4.tar.gz
+    patches:
+        - pre-c99.patch
+    sha256: 1d5257abac02aab323bf6ab26199ce0bb2a7b798bb7acea302e136438237268a
+    url: https://git.gnome.org/browse/libxml2/snapshot/libxml2-2.9.4.tar.gz
+build:
+    features: ''
+    number: '0'
+requirements:
+    build:
+        - autoconf
+        - automake
+        - libtool
+        - pkg-config
+        - icu 56.*
+        - libiconv
+        - zlib 1.2.*
+        - xz 5.2.*
+    run:
+        - icu 56.*
+        - libiconv
+        - zlib 1.2.*
+        - xz 5.2.*
+test:
+    commands:
+        - xmllint test.xml
+        - conda inspect linkages -n _test libxml2
+    files:
+        - test.xml
+    requires: ''
+about:
+    home: http://xmlsoft.org/
+    license: MIT
+    summary: The XML C parser and toolkit of Gnome
+extra:
+    recipe-maintainers:
+        - ocefpaf
+        - jakirkham
+        - gillins

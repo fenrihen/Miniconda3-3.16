@@ -1,0 +1,5 @@
+{
+  "home": "http://github.com/mitsuhiko/markupsafe",
+  "license": "BSD 3-clause",
+  "summary": "A Python module that implements the jinja2.Markup string"
+}

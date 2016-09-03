@@ -1,0 +1,57 @@
+{
+  "about": {
+    "home": "http://www.tcl.tk/",
+    "license": "Tcl/Tk",
+    "license_family": "BSD",
+    "summary": "A dynamic programming language with GUI support."
+  },
+  "build": {
+    "detect_binary_files_with_prefix": "true",
+    "features": "",
+    "number": "0"
+  },
+  "extra": {
+    "recipe-maintainers": [
+      "jakirkham",
+      "jjhelmus",
+      "msarahan",
+      "pelson"
+    ]
+  },
+  "package": {
+    "name": "tk",
+    "version": "8.5.19"
+  },
+  "requirements": {
+    "build": ""
+  },
+  "test": {
+    "commands": [
+      "test -f \"${PREFIX}/bin/tclsh\"",
+      "test -f \"${PREFIX}/bin/wish\"",
+      "test -f \"${PREFIX}/bin/tclsh8.5\"",
+      "test -f \"${PREFIX}/bin/wish8.5\"",
+      "test -f \"${PREFIX}/include/tcl.h\"",
+      "test -f \"${PREFIX}/include/tclDecls.h\"",
+      "test -f \"${PREFIX}/include/tclPlatDecls.h\"",
+      "test -f \"${PREFIX}/include/tclPlatDecls.h\"",
+      "test -f \"${PREFIX}/include/tclTomMathDecls.h\"",
+      "test -f \"${PREFIX}/include/tclTomMath.h\"",
+      "test -f \"${PREFIX}/include/tk.h\"",
+      "test -f \"${PREFIX}/include/tkDecls.h\"",
+      "test -f \"${PREFIX}/include/tkPlatDecls.h\"",
+      "test -f \"${PREFIX}/lib/libtcl8.5.so\"",
+      "test -f \"${PREFIX}/lib/libtclstub8.5.a\"",
+      "test -f \"${PREFIX}/lib/libtk8.5.so\"",
+      "test -f \"${PREFIX}/lib/libtkstub8.5.a\"",
+      "tclsh hello.tcl",
+      "tclsh8.5 hello.tcl",
+      "wish hello.tcl",
+      "wish8.5 hello.tcl"
+    ],
+    "files": [
+      "hello.tcl"
+    ],
+    "requires": ""
+  }
+}

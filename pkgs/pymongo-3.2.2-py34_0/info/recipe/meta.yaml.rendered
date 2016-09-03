@@ -1,0 +1,39 @@
+# This file created by conda-build 1.21.3
+# meta.yaml template originally from:
+# /recipe_root, last modified Thu Jun 30 23:31:09 2016
+# ------------------------------------------------
+
+package:
+    name: pymongo
+    version: 3.2.2
+source:
+    fn: pymongo-3.2.2.tar.gz
+    sha256: cdea2a973f943c67d2f417a74e84e0332e6ce65cc9de80ff318e7ab525696a9e
+    url: https://github.com/mongodb/mongo-python-driver/archive/3.2.2.tar.gz
+build:
+    number: '0'
+    script: python setup.py install --single-version-externally-managed --record=record.txt
+requirements:
+    build:
+        - python
+        - setuptools
+    run:
+        - python
+test:
+    imports:
+        - bson
+        - gridfs
+        - pymongo
+    requires:
+        - mongodb
+        - setuptools
+about:
+    home: https://github.com/mongodb/mongo-python-driver
+    license: Apache 2.0
+    summary: Python driver for MongoDB http://www.mongodb.org
+extra:
+    recipe-maintainers:
+        - ericdill
+        - licode
+        - jakirkham
+        - tacaswell

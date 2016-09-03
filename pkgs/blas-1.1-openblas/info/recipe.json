@@ -1,0 +1,30 @@
+{
+  "about": {
+    "home": "https://github.com/conda-forge/blas-feedstock",
+    "license": "BSD 3-clause",
+    "summary": "Metapackage to select the BLAS variant. Use conda's pinning mechanism in your environment to control which variant you want."
+  },
+  "build": {
+    "number": "0",
+    "string": "openblas",
+    "track_features": [
+      "blas_openblas"
+    ]
+  },
+  "extra": {
+    "recipe-maintainers": [
+      "jakirkham",
+      "pelson"
+    ]
+  },
+  "package": {
+    "name": "blas",
+    "version": "1.1"
+  },
+  "requirements": {
+    "run": [
+      "openblas"
+    ]
+  },
+  "test": {}
+}

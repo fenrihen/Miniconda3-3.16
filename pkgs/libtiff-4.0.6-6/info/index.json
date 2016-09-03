@@ -1,0 +1,15 @@
+{
+  "arch": "x86_64",
+  "build": "6",
+  "build_number": 6,
+  "depends": [
+    "jpeg 9*",
+    "xz 5.2.*",
+    "zlib 1.2*"
+  ],
+  "license": "HPND",
+  "name": "libtiff",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "version": "4.0.6"
+}

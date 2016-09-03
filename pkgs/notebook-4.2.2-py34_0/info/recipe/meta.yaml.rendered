@@ -1,0 +1,51 @@
+# This file created by conda-build 1.21.9
+# meta.yaml template originally from:
+# /recipe_root, last modified Wed Aug  3 20:40:47 2016
+# ------------------------------------------------
+
+package:
+    name: notebook
+    version: 4.2.2
+source:
+    fn: notebook-4.2.2.tar.gz
+    sha256: 418ba230c9b2e7e739940cae9fb4625e10a63f038e9c95cf1a9b7a244256ba38
+    url: https://pypi.io/packages/source/n/notebook/notebook-4.2.2.tar.gz
+build:
+    entry_points:
+        - jupyter-notebook = notebook.notebookapp:main
+        - jupyter-nbextension = notebook.nbextensions:main
+        - jupyter-serverextension = notebook.serverextensions:main
+    number: '0'
+    script: pip install --no-deps .
+requirements:
+    build:
+        - python
+        - pip
+    run:
+        - ipykernel
+        - ipython_genutils
+        - jinja2
+        - jupyter_core
+        - jupyter_client
+        - nbconvert
+        - nbformat
+        - python
+        - terminado
+        - tornado >=4
+        - traitlets
+test:
+    commands:
+        - jupyter notebook -h
+        - jupyter nbextension -h
+        - jupyter serverextension -h
+    imports:
+        - notebook
+about:
+    home: http://jupyter.org
+    license: BSD 3-clause
+    summary: A web-based notebook environment for interactive computing
+extra:
+    recipe-maintainers:
+        - jakirkham
+        - minrk
+        - pelson

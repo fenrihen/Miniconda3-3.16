@@ -1,0 +1,41 @@
+{
+  "arch": "x86_64",
+  "binstar": {
+    "channel": "main",
+    "owner_id": "5528f42ce1dad12974506e8d",
+    "package_id": "5775a3d78b572a78a5f70cb2"
+  },
+  "build": "py34_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "depends": [
+    "python 3.4*"
+  ],
+  "files": [
+    "lib/python3.4/site-packages/__pycache__/backports_abc.cpython-34.pyc",
+    "lib/python3.4/site-packages/backports_abc-0.4-py3.4.egg-info/PKG-INFO",
+    "lib/python3.4/site-packages/backports_abc-0.4-py3.4.egg-info/SOURCES.txt",
+    "lib/python3.4/site-packages/backports_abc-0.4-py3.4.egg-info/dependency_links.txt",
+    "lib/python3.4/site-packages/backports_abc-0.4-py3.4.egg-info/top_level.txt",
+    "lib/python3.4/site-packages/backports_abc.py"
+  ],
+  "fn": "backports_abc-0.4-py34_0.tar.bz2",
+  "license": "PSF 2",
+  "link": {
+    "source": "/home/fenrihen/Uygulamalar/Miniconda3-3.16/pkgs/backports_abc-0.4-py34_0",
+    "type": "hard-link"
+  },
+  "machine": "x86_64",
+  "md5": "d1ffcd0eed724686a59935c69380b887",
+  "name": "backports_abc",
+  "operatingsystem": "linux",
+  "platform": "linux",
+  "priority": 1,
+  "requires": [],
+  "schannel": "conda-forge",
+  "size": 5621,
+  "subdir": "linux-64",
+  "target-triplet": "x86_64-any-linux",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/backports_abc-0.4-py34_0.tar.bz2",
+  "version": "0.4"
+}

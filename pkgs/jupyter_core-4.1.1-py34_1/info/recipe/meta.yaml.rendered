@@ -1,0 +1,44 @@
+# This file created by conda-build 1.21.11+0.g5b44ab3.dirty
+# meta.yaml template originally from:
+# /recipe_root, last modified Mon Aug 15 12:10:08 2016
+# ------------------------------------------------
+
+package:
+    name: jupyter_core
+    version: 4.1.1
+source:
+    fn: jupyter_core-4.1.1.tar.gz
+    sha256: ae0e69435258126466c86cd989e465a9c334c50107ef4f257decc8693650bf4c
+    url: https://pypi.io/packages/source/j/jupyter_core/jupyter_core-4.1.1.tar.gz
+build:
+    entry_points:
+        - jupyter = jupyter_core.command:main
+        - jupyter-migrate = jupyter_core.migrate:main
+        - jupyter-troubleshoot = jupyter_core.troubleshoot:main
+    number: '1'
+    script: pip install --no-deps .
+requirements:
+    build:
+        - python
+        - pip
+    run:
+        - python
+        - traitlets
+test:
+    commands:
+        - jupyter -h
+        - jupyter-migrate -h
+        - jupyter-troubleshoot --help
+    imports:
+        - jupyter_core
+        - jupyter_core.utils
+about:
+    home: http://jupyter.org
+    license: BSD 3-clause
+    summary: Core common functionality of Jupyter projects.
+extra:
+    recipe-maintainers:
+        - jakirkham
+        - pelson
+        - minrk
+        - ocefpaf

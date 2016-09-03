@@ -1,0 +1,8 @@
+{
+  "description": "Qt helps you create connected devices, UIs & applications that run\nanywhere on any device, on any operating system at any time.\n",
+  "dev_url": "https://github.com/qtproject",
+  "doc_url": "http://doc.qt.io/",
+  "home": "http://qt-project.org",
+  "license": "LGPL",
+  "summary": "Qt is a cross-platform application and UI framework"
+}

@@ -1,0 +1,52 @@
+{
+  "arch": "x86_64",
+  "binstar": {
+    "channel": "main",
+    "owner_id": "5528f42ce1dad12974506e8d",
+    "package_id": "57218ecf5816395eaf208e5e"
+  },
+  "build": "py34_3",
+  "build_number": 3,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "depends": [
+    "notebook >=4.2.0",
+    "python 3.4*"
+  ],
+  "files": [
+    "bin/.widgetsnbextension-post-link.sh",
+    "bin/.widgetsnbextension-pre-unlink.sh",
+    "lib/python3.4/site-packages/widgetsnbextension-1.2.6-py3.4.egg-info/PKG-INFO",
+    "lib/python3.4/site-packages/widgetsnbextension-1.2.6-py3.4.egg-info/SOURCES.txt",
+    "lib/python3.4/site-packages/widgetsnbextension-1.2.6-py3.4.egg-info/dependency_links.txt",
+    "lib/python3.4/site-packages/widgetsnbextension-1.2.6-py3.4.egg-info/not-zip-safe",
+    "lib/python3.4/site-packages/widgetsnbextension-1.2.6-py3.4.egg-info/requires.txt",
+    "lib/python3.4/site-packages/widgetsnbextension-1.2.6-py3.4.egg-info/top_level.txt",
+    "lib/python3.4/site-packages/widgetsnbextension/__init__.py",
+    "lib/python3.4/site-packages/widgetsnbextension/__pycache__/__init__.cpython-34.pyc",
+    "lib/python3.4/site-packages/widgetsnbextension/__pycache__/_version.cpython-34.pyc",
+    "lib/python3.4/site-packages/widgetsnbextension/_version.py",
+    "lib/python3.4/site-packages/widgetsnbextension/static/extension.js",
+    "lib/python3.4/site-packages/widgetsnbextension/static/extension.js.map",
+    "share/jupyter/nbextensions/jupyter-js-widgets/extension.js",
+    "share/jupyter/nbextensions/jupyter-js-widgets/extension.js.map"
+  ],
+  "fn": "widgetsnbextension-1.2.6-py34_3.tar.bz2",
+  "license": "BSD 3-clause",
+  "link": {
+    "source": "/home/fenrihen/Uygulamalar/Miniconda3-3.16/pkgs/widgetsnbextension-1.2.6-py34_3",
+    "type": "hard-link"
+  },
+  "machine": "x86_64",
+  "md5": "4c9ee35a8fb6975de404513117134ae1",
+  "name": "widgetsnbextension",
+  "operatingsystem": "linux",
+  "platform": "linux",
+  "priority": 1,
+  "requires": [],
+  "schannel": "conda-forge",
+  "size": 1181979,
+  "subdir": "linux-64",
+  "target-triplet": "x86_64-any-linux",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/widgetsnbextension-1.2.6-py34_3.tar.bz2",
+  "version": "1.2.6"
+}

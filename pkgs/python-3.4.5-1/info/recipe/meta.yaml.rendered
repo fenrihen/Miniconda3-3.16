@@ -1,0 +1,53 @@
+# This file created by conda-build 1.21.7
+# meta.yaml template originally from:
+# /recipe_root, last modified Tue Jul 26 01:31:56 2016
+# ------------------------------------------------
+
+package:
+    name: python
+    version: 3.4.5
+source:
+    fn: Python-3.4.5.tgz
+    patches: ''
+    sha256: 997aca4dd8692f3c954658a3db11c1d0862bcbf8eadd6a164746eb33d317c034
+    url: https://www.python.org/ftp/python/3.4.5/Python-3.4.5.tgz
+build:
+    no_link:
+        - bin/python3.4
+    number: '1'
+    track_features: ''
+requirements:
+    build:
+        - bzip2 1.0.*
+        - openssl 1.0.*
+        - readline 6.2*
+        - sqlite 3.13.*
+        - tk 8.5.*
+        - xz 5.2.*
+        - zlib 1.2.*
+        - ncurses 5.9*
+    run:
+        - openssl 1.0.*
+        - readline 6.2*
+        - sqlite 3.13.*
+        - tk 8.5.*
+        - xz 5.2.*
+        - zlib 1.2.*
+        - ncurses 5.9*
+test:
+    commands:
+        - python -V
+        - python3 -V
+        - 2to3 -h
+        - pydoc -h
+        - python3-config --help
+about:
+    home: http://www.python.org/
+    license: PSF
+    summary: General purpose programming language
+extra:
+    recipe-maintainers:
+        - jakirkham
+        - jjhelmus
+        - msarahan
+        - pelson
