@@ -20,3 +20,4 @@ Diğer tüm paketler *conda install <paket-adı>* komutu kullanılarak yükleneb
 ### pymongo
 
 ## JupyterNB
+*jupyter_notebook_config.py* doyası oluşturulup aşağıdaki satırlar eklenir
