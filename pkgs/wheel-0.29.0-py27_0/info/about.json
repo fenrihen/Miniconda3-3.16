@@ -1,0 +1,5 @@
+{
+  "home": "https://bitbucket.org/pypa/wheel/",
+  "license": "MIT",
+  "summary": "A built-package format for Python."
+}

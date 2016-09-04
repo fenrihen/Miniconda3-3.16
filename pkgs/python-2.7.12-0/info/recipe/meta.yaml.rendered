@@ -1,0 +1,50 @@
+# This file created by conda-build 1.21.11+0.g5b44ab3.dirty
+# meta.yaml template originally from:
+# /recipe_root, last modified Fri Aug 12 18:51:11 2016
+# ------------------------------------------------
+
+package:
+    name: python
+    version: 2.7.12
+source:
+    fn: Python-2.7.12.tgz
+    patches: ''
+    sha256: 3cb522d17463dfa69a155ab18cffa399b358c966c0363d6c8b5b3bf1384da4b6
+    url: https://www.python.org/ftp/python/2.7.12/Python-2.7.12.tgz
+build:
+    no_link:
+        - bin/python2.7
+    number: '0'
+    track_features: ''
+requirements:
+    build:
+        - bzip2 1.0.*
+        - openssl 1.0.*
+        - readline 6.2*
+        - sqlite 3.13.*
+        - tk 8.5.*
+        - zlib 1.2.*
+        - ncurses 5.9*
+    run:
+        - openssl 1.0.*
+        - readline 6.2*
+        - sqlite 3.13.*
+        - tk 8.5.*
+        - zlib 1.2.*
+        - ncurses 5.9*
+test:
+    commands:
+        - python -V
+        - pydoc -h
+        - python-config --help
+        - idle -h
+about:
+    home: http://www.python.org/
+    license: PSF
+    summary: General purpose programming language
+extra:
+    recipe-maintainers:
+        - jakirkham
+        - jjhelmus
+        - msarahan
+        - pelson

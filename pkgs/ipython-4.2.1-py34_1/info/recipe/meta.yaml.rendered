@@ -1,0 +1,46 @@
+# This file created by conda-build 1.21.4
+# meta.yaml template originally from:
+# /recipe_root, last modified Thu Jul  7 11:20:38 2016
+# ------------------------------------------------
+
+package:
+    name: ipython
+    version: 4.2.1
+source:
+    fn: ipython-4.2.1.tar.gz
+    sha256: e21c3d7f410014b04d36fe12998f132ed9ef4c6119b81016c04eedb09f0716a5
+    url: https://pypi.io/packages/source/i/ipython/ipython-4.2.1.tar.gz
+build:
+    entry_points:
+        - ipython = IPython:start_ipython
+        - ipython3 = IPython:start_ipython
+    number: '1'
+    script: python -m pip install --no-deps .
+requirements:
+    build:
+        - python
+        - pip
+    run:
+        - python
+        - pickleshare
+        - simplegeneric >0.8
+        - decorator
+        - traitlets
+        - pexpect
+        - backports.shutil_get_terminal_size
+test:
+    commands:
+        - ipython -h
+        - ipython3 -h
+    imports:
+        - IPython
+about:
+    home: http://ipython.org/
+    license: BSD 3-clause
+    summary: 'IPython: Productive Interactive Computing'
+extra:
+    recipe-maintainers:
+        - jakirkham
+        - pelson
+        - minrk
+        - ocefpaf

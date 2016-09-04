@@ -153,3 +153,81 @@ zlib-1.2.8-0
 # cmd: /home/fenrihen/Uygulamalar/Miniconda3-3.16/bin/conda install pymongo
 +conda-forge::pymongo-3.2.2-py34_0
 # install specs: ['pymongo', 'python 3.4* (target=conda-forge::python-3.4.5-1.tar.bz2)', 'conda >=4.1.11', 'conda-env']
+==> 2016-09-03 15:02:52 <==
+# cmd: /home/fenrihen/Uygulamalar/Miniconda3-3.16/bin/conda remove jupyter_contrib_nbextensions
+-conda-forge::jupyter_contrib_nbextensions-0.1.0-py34_0
+# remove specs: ['jupyter_contrib_nbextensions', 'python 3.4* (target=conda-forge::python-3.4.5-1.tar.bz2)']
+==> 2016-09-03 15:03:28 <==
+# cmd: /home/fenrihen/Uygulamalar/Miniconda3-3.16/bin/conda install jupyter_contrib_nbextensions
++conda-forge::jupyter_contrib_nbextensions-0.1.0-py34_0
+# install specs: ['jupyter_contrib_nbextensions', 'python 3.4* (target=conda-forge::python-3.4.5-1.tar.bz2)', 'conda >=4.1.11', 'conda-env']
+==> 2016-09-03 15:14:12 <==
+# cmd: /home/fenrihen/Uygulamalar/Miniconda3-3.16/bin/conda remove jupyter_contrib_nbextensions
+-conda-forge::jupyter_contrib_nbextensions-0.1.0-py34_0
+# remove specs: ['jupyter_contrib_nbextensions', 'python 3.4* (target=conda-forge::python-3.4.5-1.tar.bz2)']
+==> 2016-09-03 15:14:31 <==
+# cmd: /home/fenrihen/Uygulamalar/Miniconda3-3.16/bin/conda remove jupyter_nbextensions_configurator
+-conda-forge::jupyter_nbextensions_configurator-0.2.1-py34_2
+# remove specs: ['jupyter_nbextensions_configurator', 'python 3.4* (target=conda-forge::python-3.4.5-1.tar.bz2)']
+==> 2016-09-03 15:53:15 <==
+# cmd: /home/fenrihen/Uygulamalar/Miniconda3-3.16/bin/conda install jupyter_contrib_nbextensions
++conda-forge::jupyter_contrib_nbextensions-0.1.0-py34_0
++conda-forge::jupyter_nbextensions_configurator-0.2.1-py34_2
+# install specs: ['jupyter_contrib_nbextensions', 'python 3.4* (target=conda-forge::python-3.4.5-1.tar.bz2)', 'conda >=4.1.11', 'conda-env']
+==> 2016-09-03 20:11:36 <==
+# cmd: /home/fenrihen/Uygulamalar/Miniconda3-3.16/bin/conda remove jupyter_contrib_nbextensions
+-conda-forge::jupyter_contrib_nbextensions-0.1.0-py34_0
+# remove specs: ['jupyter_contrib_nbextensions', 'python 3.4* (target=conda-forge::python-3.4.5-1.tar.bz2)']
+==> 2016-09-03 20:13:19 <==
+# cmd: /home/fenrihen/Uygulamalar/Miniconda3-3.16/bin/conda remove jupyter_nbextensions_configurator
+-conda-forge::jupyter_nbextensions_configurator-0.2.1-py34_2
+# remove specs: ['jupyter_nbextensions_configurator', 'python 3.4* (target=conda-forge::python-3.4.5-1.tar.bz2)']
+==> 2016-09-03 20:17:32 <==
+# cmd: /home/fenrihen/Uygulamalar/Miniconda3-3.16/bin/conda install jupyter_contrib_nbextensions
++conda-forge::jupyter_contrib_nbextensions-0.1.0-py34_0
++conda-forge::jupyter_nbextensions_configurator-0.2.1-py34_2
+# install specs: ['jupyter_contrib_nbextensions', 'python 3.4* (target=conda-forge::python-3.4.5-1.tar.bz2)', 'conda >=4.1.11', 'conda-env']
+==> 2016-09-03 20:23:56 <==
+# cmd: /home/fenrihen/Uygulamalar/Miniconda3-3.16/bin/conda remove jupyter_nbextensions_configurator
+-conda-forge::jupyter_contrib_nbextensions-0.1.0-py34_0
+-conda-forge::jupyter_nbextensions_configurator-0.2.1-py34_2
+# remove specs: ['jupyter_nbextensions_configurator', 'python 3.4* (target=conda-forge::python-3.4.5-1.tar.bz2)']
+==> 2016-09-03 20:25:06 <==
+# cmd: /home/fenrihen/Uygulamalar/Miniconda3-3.16/bin/conda remove notebook
+-conda-forge::ipywidgets-5.2.2-py34_0
+-conda-forge::jupyter_contrib_core-0.3.0-py34_0
+-conda-forge::notebook-4.2.2-py34_0
+-conda-forge::widgetsnbextension-1.2.6-py34_3
+-jupyter-1.0.0-py34_3
+# remove specs: ['notebook', 'python 3.4* (target=conda-forge::python-3.4.5-1.tar.bz2)']
+==> 2016-09-03 20:26:04 <==
+# cmd: /home/fenrihen/Uygulamalar/Miniconda3-3.16/bin/conda remove ipython
+-conda-forge::ipykernel-4.4.1-py34_1
+-conda-forge::ipython-5.1.0-py34_0
+-conda-forge::jupyter_console-5.0.0-py34_0
+-conda-forge::qtconsole-4.2.1-py34_0
+# remove specs: ['ipython', 'python 3.4* (target=conda-forge::python-3.4.5-1.tar.bz2)']
+==> 2016-09-03 20:27:15 <==
+# cmd: /home/fenrihen/Uygulamalar/Miniconda3-3.16/bin/conda install ipython=4
++conda-forge::ipython-4.2.1-py34_1
+# install specs: ['ipython 4*', 'python 3.4* (target=conda-forge::python-3.4.5-1.tar.bz2)', 'conda >=4.1.11', 'conda-env']
+==> 2016-09-03 20:28:00 <==
+# cmd: /home/fenrihen/Uygulamalar/Miniconda3-3.16/bin/conda install notebook
++conda-forge::ipykernel-4.5.0-py34_0
++conda-forge::notebook-4.2.2-py34_0
+# install specs: ['notebook', 'python 3.4* (target=conda-forge::python-3.4.5-1.tar.bz2)', 'conda >=4.1.11', 'conda-env']
+==> 2016-09-03 20:38:04 <==
+# cmd: /home/fenrihen/Uygulamalar/Miniconda3-3.16/bin/conda remove ipython
+-conda-forge::ipykernel-4.5.0-py34_0
+-conda-forge::ipython-4.2.1-py34_1
+-conda-forge::notebook-4.2.2-py34_0
+# remove specs: ['ipython', 'python 3.4* (target=conda-forge::python-3.4.5-1.tar.bz2)']
+==> 2016-09-03 20:40:44 <==
+# cmd: /home/fenrihen/Uygulamalar/Miniconda3-3.16/bin/conda install jupyter_contrib_nbextensions
++conda-forge::ipykernel-4.5.0-py34_0
++conda-forge::ipython-5.1.0-py34_0
++conda-forge::jupyter_contrib_core-0.3.0-py34_0
++conda-forge::jupyter_contrib_nbextensions-0.1.0-py34_0
++conda-forge::jupyter_nbextensions_configurator-0.2.1-py34_2
++conda-forge::notebook-4.2.2-py34_0
+# install specs: ['jupyter_contrib_nbextensions', 'python 3.4* (target=conda-forge::python-3.4.5-1.tar.bz2)', 'conda >=4.1.11', 'conda-env']

@@ -79,3 +79,11 @@ https://conda.anaconda.org/conda-forge/linux-64/openblas-0.2.18-4.tar.bz2
 https://conda.anaconda.org/conda-forge/linux-64/blas-1.1-openblas.tar.bz2
 https://conda.anaconda.org/conda-forge/linux-64/numpy-1.11.1-py34_blas_openblas_201.tar.bz2
 https://conda.anaconda.org/conda-forge/linux-64/pymongo-3.2.2-py34_0.tar.bz2
+https://conda.anaconda.org/conda-forge/linux-64/readline-6.2-0.tar.bz2
+https://conda.anaconda.org/conda-forge/linux-64/python-2.7.12-0.tar.bz2
+https://conda.anaconda.org/conda-forge/linux-64/certifi-2016.8.8-py27_0.tar.bz2
+https://conda.anaconda.org/conda-forge/linux-64/setuptools-26.1.1-py27_0.tar.bz2
+https://conda.anaconda.org/conda-forge/linux-64/wheel-0.29.0-py27_0.tar.bz2
+https://conda.anaconda.org/conda-forge/linux-64/pip-8.1.2-py27_0.tar.bz2
+https://conda.anaconda.org/conda-forge/linux-64/ipython-4.2.1-py34_1.tar.bz2
+https://conda.anaconda.org/conda-forge/linux-64/ipykernel-4.5.0-py34_0.tar.bz2

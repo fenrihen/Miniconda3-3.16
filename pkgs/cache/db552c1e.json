@@ -1,6 +1,6 @@
 {
-  "_etag": "\"57ca41d3-4d268\"",
-  "_mod": "Sat, 03 Sep 2016 03:21:55 GMT",
+  "_etag": "\"57cb0caa-4d2fd\"",
+  "_mod": "Sat, 03 Sep 2016 17:47:22 GMT",
   "_url": "https://repo.continuum.io/pkgs/free/linux-64/",
   "info": {
     "arch": "x86_64",
@@ -114057,6 +114057,48 @@
       "requires": [],
       "size": 233415,
       "version": "4.3.0"
+    },
+    "psutil-4.3.1-py27_0.tar.bz2": {
+      "build": "py27_0",
+      "build_number": 0,
+      "date": "2016-09-03",
+      "depends": [
+        "python 2.7*"
+      ],
+      "license": "BSD",
+      "md5": "ad9e10afe86b0653dd85804f24b55e03",
+      "name": "psutil",
+      "requires": [],
+      "size": 228914,
+      "version": "4.3.1"
+    },
+    "psutil-4.3.1-py34_0.tar.bz2": {
+      "build": "py34_0",
+      "build_number": 0,
+      "date": "2016-09-03",
+      "depends": [
+        "python 3.4*"
+      ],
+      "license": "BSD",
+      "md5": "af36631552622efb9cc4d98304082757",
+      "name": "psutil",
+      "requires": [],
+      "size": 233779,
+      "version": "4.3.1"
+    },
+    "psutil-4.3.1-py35_0.tar.bz2": {
+      "build": "py35_0",
+      "build_number": 0,
+      "date": "2016-09-03",
+      "depends": [
+        "python 3.5*"
+      ],
+      "license": "BSD",
+      "md5": "3abc2e702513d8032d6dcf09c8a6d595",
+      "name": "psutil",
+      "requires": [],
+      "size": 233105,
+      "version": "4.3.1"
     },
     "psycopg2-2.4.6-py27_0.tar.bz2": {
       "build": "py27_0",

@@ -1,0 +1,36 @@
+{
+  "arch": "x86_64",
+  "binstar": {
+    "channel": "main",
+    "owner_id": "5528f42ce1dad12974506e8d",
+    "package_id": "572d1d8708df866c4ff247e8"
+  },
+  "build": "3",
+  "build_number": 3,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "depends": [],
+  "files": [
+    "ssl/cacert.pem",
+    "ssl/cert.pem"
+  ],
+  "fn": "ca-certificates-2016.8.2-3.tar.bz2",
+  "has_prefix": false,
+  "license": "ISC",
+  "link": {
+    "source": "/home/fenrihen/Uygulamalar/Miniconda3-3.16/pkgs/ca-certificates-2016.8.2-3",
+    "type": "hard-link"
+  },
+  "machine": "x86_64",
+  "md5": "a9c69b2326b4d10efdd7ea40280c4610",
+  "name": "ca-certificates",
+  "operatingsystem": "linux",
+  "platform": "linux",
+  "priority": 1,
+  "requires": [],
+  "schannel": "conda-forge",
+  "size": 167908,
+  "subdir": "linux-64",
+  "target-triplet": "x86_64-any-linux",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/ca-certificates-2016.8.2-3.tar.bz2",
+  "version": "2016.8.2"
+}

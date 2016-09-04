@@ -1,0 +1,15 @@
+==> 2016-09-03 15:24:07 <==
+# cmd: /home/fenrihen/Uygulamalar/Miniconda3-3.16/bin/conda create -n python27 python=2.7
+conda-forge::ca-certificates-2016.8.2-3
+conda-forge::certifi-2016.8.8-py27_0
+conda-forge::ncurses-5.9-8
+conda-forge::openssl-1.0.2h-2
+conda-forge::pip-8.1.2-py27_0
+conda-forge::python-2.7.12-0
+conda-forge::readline-6.2-0
+conda-forge::setuptools-26.1.1-py27_0
+conda-forge::sqlite-3.13.0-1
+conda-forge::tk-8.5.19-0
+conda-forge::wheel-0.29.0-py27_0
+conda-forge::zlib-1.2.8-3
+# create specs: ['python 2.7*']

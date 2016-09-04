@@ -1,0 +1,42 @@
+# This file created by conda-build 1.21.14+0.g4dfebe9.dirty
+# meta.yaml template originally from:
+# /recipe_root, last modified Fri Sep  2 16:59:06 2016
+# ------------------------------------------------
+
+package:
+    name: ipykernel
+    version: 4.5.0
+source:
+    fn: ipykernel-4.5.0.tar.gz
+    sha256: 245a798edb8fd751b95750d8645d736dd739a020e7fc7d5627dac4d1c35d8295
+    url: https://pypi.io/packages/source/i/ipykernel/ipykernel-4.5.0.tar.gz
+build:
+    number: '0'
+    script:
+        - pip install --no-deps .
+        - python -m ipykernel install --prefix $PREFIX
+requirements:
+    build:
+        - pip
+        - python
+        - jupyter_client
+        - ipython >=4.0
+        - tornado >=4.0
+    run:
+        - python
+        - ipython >=4.0
+        - traitlets
+        - jupyter_client
+        - tornado >=4.0
+test:
+    imports:
+        - ipykernel
+about:
+    home: http://ipython.org
+    license: BSD 3-clause
+    summary: IPython Kernel for Jupyter
+extra:
+    recipe-maintainers:
+        - jakirkham
+        - pelson
+        - minrk

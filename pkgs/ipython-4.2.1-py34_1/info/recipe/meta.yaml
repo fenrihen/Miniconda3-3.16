@@ -1,0 +1,58 @@
+{% set version = "4.2.1" %}
+
+package:
+  name: ipython
+  version: {{ version }}
+
+source:
+  fn: ipython-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/i/ipython/ipython-{{ version }}.tar.gz
+  sha256: e21c3d7f410014b04d36fe12998f132ed9ef4c6119b81016c04eedb09f0716a5
+
+build:
+  number: 1
+  script: python -m pip install --no-deps .
+  entry_points:
+    - ipython = IPython:start_ipython
+    - ipython2 = IPython:start_ipython  # [py2k]
+    - ipython3 = IPython:start_ipython  # [py3k]
+
+requirements:
+  build:
+    - python
+    - pip
+  run:
+    - python
+    - pickleshare
+    - simplegeneric >0.8
+# These are listed in the setup.py, but do not cause the build tests to fail.
+# In order to enable these dependencies, additional tests will need to be defined.
+#    - prompt_toolkit >=0.60
+#    - pygments
+    - decorator
+    - traitlets
+    - pexpect              # [unix]
+    - appnope              # [osx]
+    - pyreadline           # [win]
+    - backports.shutil_get_terminal_size
+    - python.app           # [osx]
+
+test:
+  commands:
+    - ipython -h
+    - ipython2 -h          # [py2k]
+    - ipython3 -h          # [py3k]
+  imports:
+    - IPython
+
+about:
+  home: http://ipython.org/
+  license: BSD 3-clause
+  summary: "IPython: Productive Interactive Computing"
+
+extra:
+  recipe-maintainers:
+    - jakirkham
+    - pelson
+    - minrk
+    - ocefpaf

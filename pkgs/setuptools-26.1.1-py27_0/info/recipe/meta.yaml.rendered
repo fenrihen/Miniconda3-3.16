@@ -1,0 +1,51 @@
+# This file created by conda-build 1.21.14+0.g4dfebe9.dirty
+# meta.yaml template originally from:
+# /recipe_root, last modified Thu Sep  1 19:08:07 2016
+# ------------------------------------------------
+
+package:
+    name: setuptools
+    version: 26.1.1
+source:
+    fn: setuptools-26.1.1.tar.gz
+    patches:
+        - nodownload.patch
+    sha256: 046184de4a40df5679a7ae1be2f7e9bb6866b380368035aff4e99e2d96876db6
+    url: https://github.com/pypa/setuptools/archive/v26.1.1.tar.gz
+build:
+    entry_points:
+        - easy_install = setuptools.command.easy_install:main
+    number: '0'
+requirements:
+    build:
+        - python
+        - certifi
+    run:
+        - python
+        - certifi
+test:
+    commands:
+        - easy_install --help
+    imports:
+        - setuptools
+        - easy_install
+        - pkg_resources
+about:
+    description: 'Setuptools is a fully-featured, actively-maintained, and stable
+        library
+
+        designed to facilitate packaging Python projects.
+
+        '
+    dev_url: https://github.com/pypa/setuptools
+    doc_url: http://pythonhosted.org/setuptools/
+    home: https://github.com/pypa/setuptools
+    license: MIT
+    license_family: MIT
+    license_file: LICENSE
+    summary: Download, build, install, upgrade, and uninstall Python packages
+extra:
+    recipe-maintainers:
+        - jakirkham
+        - msarahan
+        - ocefpaf

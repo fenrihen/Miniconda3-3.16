@@ -1,0 +1,11 @@
+{
+ "argv": [
+  "/opt/anaconda1anaconda2anaconda3/bin/python",
+  "-m",
+  "ipykernel",
+  "-f",
+  "{connection_file}"
+ ],
+ "language": "python",
+ "display_name": "Python 3"
+}
