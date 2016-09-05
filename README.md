@@ -20,7 +20,11 @@ Diğer tüm paketler *conda install <paket-adı>* komutu kullanılarak yükleneb
 ### pymongo
 
 ## JupyterNB
-*jupyter_notebook_config.py* doyası oluşturulup aşağıdaki satırlar eklenir
+Öncelikle kullnılacak olan port için güvenlik duvarından izin açılır.
+ˋˋˋbash
+sudo ufw allow 8888
+ˋˋˋ
+Ardından *jupyter_notebook_config.py* doyası oluşturulup aşağıdaki satırlar eklenir
 ```python
 # Set the Access-Control-Allow-Origin header
 #
