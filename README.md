@@ -20,7 +20,7 @@ Diğer tüm paketler *conda install <paket-adı>* komutu kullanılarak yükleneb
 ### pymongo
 
 ## JupyterNB
-Öncelikle kullnılacak olan port için güvenlik duvarından izin açılır.
+Öncelikle kullnılacak olan port için güvenlik duvarından izin açılır.  
 ˋˋˋbash
 sudo ufw allow 8888
 ˋˋˋ
